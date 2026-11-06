@@ -1,0 +1,115 @@
+DYSPHAGIA FIGURE CAPTIONS - SEPARATE FROM ARTWORK
+
+Fig. 1 Survey-weighted prevalence of frequent loneliness by self-reported
+swallowing problems among adults aged 65 years or older, NHIS 2025
+Points indicate weighted prevalences and horizontal lines indicate design-based
+95% confidence intervals calculated using a logit transformation. Frequent
+loneliness was defined as always or usually feeling lonely (LONELY_A=1/2).
+Swallowing problems refer to problems or difficulties during the preceding
+12 months (VSLSWYR_A=1 versus 2). The analysis includes 8,231 adults with valid
+exposure and outcome responses. When numerical age was unavailable, AGE65 was
+used to confirm age 65 years or older for descriptive analyses. The group without
+swallowing problems includes 7,545 adults and 355 events; the group with problems
+includes 686 adults and 83 events. Sample sizes and event counts are unweighted.
+Prevalences and confidence intervals incorporate the final annual adult weight
+(WTFA_A), public-use strata (PSTRAT) and primary sampling units (PPSU). No
+covariate adjustment was performed. These denominators differ from those in
+the regression analyses. Events denote respondents reporting frequent loneliness,
+not incident cases.
+
+Fig. 2 Prevalence ratios for frequent loneliness in adults with versus
+without swallowing problems across sequential adjustment models, NHIS 2025
+All five models use the same complete-case sample of 8,094 adults aged 65 years
+or older, with 429 frequent-loneliness events. Points represent prevalence ratios
+(PRs) from survey-weighted Poisson models with a log link and design-based
+variance estimation; lines represent 95% confidence intervals. The horizontal
+axis is logarithmic and the dashed vertical line marks PR=1. M0 includes no
+covariates. M1 adds age group (65-74, 75-84, 85+) and sex. M2 additionally adjusts
+for educational attainment, family income-to-poverty ratio, partnership, living
+alone, mobility limitations, hearing difficulties and history of stroke. M3
+adds the frequency of in-person and telephone/video contact with close others
+outside the household during a typical week. M3 is the primary model and is
+highlighted by a diamond and color. M4 is an extended sensitivity
+analysis that additionally adjusts for attendance at religious services and
+meetings of clubs or organizations during the preceding year. Each contact or
+participation variable is modeled as a four-category factor. Results from
+income-adjusted models are pooled across all ten official income imputations
+using Rubin's rules with finite complete-data degrees of freedom. For consistency
+with the analysis script, models without income were also pooled across the ten
+identical copies. Changes in estimates do not quantify causal effects or a
+proportion mediated by social contact.
+
+Fig. 3 Secondary analysis of the severity of self-reported swallowing
+difficulties and frequent loneliness, NHIS 2025
+Points and horizontal lines show PRs and 95% confidence intervals adjusted for
+the M3 covariates, comparing a little difficulty, somewhere in between and a lot
+of difficulty with no swallowing problems. These labels follow the questionnaire
+response options. The original severity codes are ordered 1, 3 and 2; they do not
+form an equally spaced continuous scale. The reference group has PR=1 and no
+artificial confidence interval is plotted. The analysis includes 8,093 adults and
+429 events. Group-specific sample sizes/event counts are 7,420/347 (no problems),
+361/33 (a little), 199/27 (somewhere in between) and 113/22 (a lot). One member of
+the common regression sample has no valid severity response. The small numbers
+of events in the severity groups warrant caution. No trend test was performed;
+points are not connected. Self-reported difficulty is not a clinically validated
+dysphagia severity scale and the results do not establish a causal dose-response
+relationship.
+
+Online Resource 1, Fig. S1 Sensitivity analyses of the association between
+swallowing problems and loneliness, NHIS 2025
+Points and lines indicate prevalence ratios (PRs) and 95% confidence intervals. The primary M3 model
+is included for comparison. Additional rows show M3 in all complete cases for
+that model, M3 excluding proxy interviews, models without and with additional
+adjustment for depressive feelings in an identical sample (N=8,055), and M3 with
+a broader loneliness outcome. Depressive feelings were classified as daily/weekly
+versus less often/never; this variable does not indicate a clinical depression
+diagnosis. The broader outcome includes always, usually or sometimes feeling
+lonely (2,120 events). Comparisons must account for differences in sample
+composition and outcome definition. Supplementary analyses are not adjusted for
+multiplicity. Some fitted values exceed 1 in the depressive-feelings-adjusted
+and broader-outcome Poisson models; these fits should not be interpreted as
+individual probabilities. Attenuation after adjustment for depressive feelings
+does not establish causal mediation. The logistic sensitivity analysis is not
+plotted on the same axis because its effect measure is an odds ratio, not a PR.
+
+
+Online Resource 1, Fig. S2 Model-standardized prevalence of frequent loneliness
+by swallowing problems among adults aged 65 years or older, NHIS 2025
+Points and horizontal lines show standardized prevalences and 95% confidence
+intervals from survey-weighted logistic models with the M3 covariates. Frequent
+loneliness was defined as always or usually feeling lonely. Swallowing problems
+refer to self-reported difficulties during the preceding 12 months. Both exposure
+levels were standardized over the survey-weighted covariate distribution of the
+same complete-case sample of 8,094 adults, including 429 outcome events. Covariates
+were age group, sex, education, family income-to-poverty ratio, partnership, living
+alone, mobility, hearing, stroke history, in-person contact and telephone/video
+contact. Estimates and variances were pooled over ten official income imputations.
+Prevalences were pooled on the logit scale, the absolute difference on its natural
+scale and the marginal prevalence ratio on the log scale, so the pooled contrasts
+need not exactly equal arithmetic operations on the separately rounded pooled
+prevalences. These model-standardized associations are not causal effects. The
+marginal PR is not the same parameter as the primary conditional Poisson PR.
+
+Online Resource 1, Fig. S3 Survey-weighted distribution of all five loneliness
+response categories by swallowing problems among adults aged 65 years or older,
+NHIS 2025
+Points represent weighted category percentages and horizontal lines show
+Korn-Graubard 95% confidence intervals. Blue circles indicate participants without
+swallowing problems; teal diamonds indicate participants with swallowing problems.
+The analysis includes 7,545 and 686 participants, respectively, with valid exposure
+and outcome responses; the two groups contain 8,231 adults in total. Percentages
+sum to 100% within each exposure group before rounding. The sample sizes
+are unweighted. These distributions are unadjusted for covariates; all ten category
+proportions satisfy the implemented NCHS precision criteria. The primary binary
+outcome combines the usually and always categories. No common proportional-odds
+estimate is superimposed because the planned diagnostic did not support the full
+common-slope specification. The distributions and uncertainty intervals describe
+cross-sectional self-report data and do not establish direction or causation.
+
+
+Related estimates for Online Resource 1, Fig. S2: absolute prevalence difference 3.67 percentage points (95% CI 1.75, 5.60); marginal prevalence ratio 1.86 (95% CI 1.43, 2.42).
+
+Software: R 4.6.0 with the grid graphics package and Cairo graphics devices.
+Artwork: 174 x 110 mm; PNG and LZW-compressed TIFF at 600 dpi; Cairo PDF and EPS vector files.
+File mapping: Fig1-Fig3 = main figures; ESM1_Fig1-Fig3 = Online Resource 1, Figs. S1-S3.
+The 174-mm width is an implementation choice, not a verified journal-specific size mandate.

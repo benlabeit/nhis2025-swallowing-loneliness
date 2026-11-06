@@ -1,0 +1,163 @@
+{
+  "result": "PASS",
+  "nominal_size_mm": [
+    174,
+    110
+  ],
+  "size_note": "Cairo vector page bounds round to whole PostScript points; actual dimensions are recorded per file. Raster dimensions are 4110 x 2598 pixels at 600 dpi.",
+  "font_sizes_pt": [
+    9,
+    9.5
+  ],
+  "minimum_line_width_mm": 0.15874999999999997,
+  "visual_review": "All six PNG artworks inspected; after label/legend corrections, all six final PDFs rendered by Poppler at 120 dpi and visually inspected without clipping or overlap.",
+  "original_result_tables_unchanged": 5,
+  "original_figure_files_unchanged": 23,
+  "models_refitted": false,
+  "figures": [
+    {
+      "figure": "Fig1",
+      "pixels": [
+        4110,
+        2598
+      ],
+      "raster_dpi": 600,
+      "tiff_colour": "RGB",
+      "vector_size_mm": [
+        173.91944444444442,
+        109.71388888888889
+      ],
+      "pdf_fonts_embedded": [
+        "/MGKRQU+Arial-BoldMT",
+        "/TUGWTI+ArialMT"
+      ],
+      "eps_fonts_embedded_type42": true,
+      "sha256": {
+        "png": "612b121d3b291e822f02127847d65835f66ce69097718828720e84b24f454702",
+        "tiff": "777ddea7c2aa846313dc80221b38c6a33c672ee6d33c8c7563287759db5ee3ca",
+        "pdf": "ebdf5f0056888972fa47ac71cdbbaf3b3f9c19d1515ee9c48dfe72cf057dd963",
+        "eps": "243b4a5c2779b69c79c04afe822f5577328e93f1399402d618d837551df442b7"
+      }
+    },
+    {
+      "figure": "Fig2",
+      "pixels": [
+        4110,
+        2598
+      ],
+      "raster_dpi": 600,
+      "tiff_colour": "RGB",
+      "vector_size_mm": [
+        173.91944444444442,
+        109.71388888888889
+      ],
+      "pdf_fonts_embedded": [
+        "/ZWDAKB+Arial-BoldMT",
+        "/JHFABE+ArialMT"
+      ],
+      "eps_fonts_embedded_type42": true,
+      "sha256": {
+        "png": "b27ba9a0efba6f804c1a54042b9a41dbae1eee471845ff7b0bf4382b013f2622",
+        "tiff": "216c28dbcd7e82fd05fa051fdfdbe40583926ff99e50b948648cf30101c57557",
+        "pdf": "b2d63018eb7e1462876242a9517ff5be8dcb2b4110bc157dc52f6b17f0e863d4",
+        "eps": "76083c0d6103d53cb4b8ddae1f6cbad832c6deeddcf77c7f1cca4d662b259806"
+      }
+    },
+    {
+      "figure": "Fig3",
+      "pixels": [
+        4110,
+        2598
+      ],
+      "raster_dpi": 600,
+      "tiff_colour": "RGB",
+      "vector_size_mm": [
+        173.91944444444442,
+        109.71388888888889
+      ],
+      "pdf_fonts_embedded": [
+        "/ESCRFC+Arial-BoldMT",
+        "/ARZJVO+ArialMT"
+      ],
+      "eps_fonts_embedded_type42": true,
+      "sha256": {
+        "png": "daa03145188622b74ee532209fe33d96d3df70f9e83590b550b6a0c79ba117ab",
+        "tiff": "668669e57ad769c593c7706c547a57faf6345614fa4148c1a088d19de32f6ead",
+        "pdf": "41256d2c87eec8dd8dee9f3017b9019f6d671df967450ccb9abf05d220c05228",
+        "eps": "586d20dd2e06ae95d4ae1e8c62a9ff08ada0cc3874b97c2c048abf20b53ad5aa"
+      }
+    },
+    {
+      "figure": "ESM1_Fig1",
+      "pixels": [
+        4110,
+        2598
+      ],
+      "raster_dpi": 600,
+      "tiff_colour": "RGB",
+      "vector_size_mm": [
+        173.91944444444442,
+        109.71388888888889
+      ],
+      "pdf_fonts_embedded": [
+        "/VHLCFY+Arial-BoldMT",
+        "/IPTFCV+ArialMT"
+      ],
+      "eps_fonts_embedded_type42": true,
+      "sha256": {
+        "png": "27a2388b3aac83c12bf2d6a5245733fac6b1ed727281569477ccc402bfb9a181",
+        "tiff": "2683773087da6cde0b0b8dda209e4c76119d33754b4d9dde02b0d35da4e6fb2a",
+        "pdf": "fb62d683cc849b27d0dc5ebe5f4d541246e20d13125ea26d4014f78daa6f4afb",
+        "eps": "5aeadca211adfdc1f697964c375ca0a2643bb3a74d70e522c4cdd2bf98fc9569"
+      }
+    },
+    {
+      "figure": "ESM1_Fig2",
+      "pixels": [
+        4110,
+        2598
+      ],
+      "raster_dpi": 600,
+      "tiff_colour": "RGB",
+      "vector_size_mm": [
+        173.91944444444442,
+        109.71388888888889
+      ],
+      "pdf_fonts_embedded": [
+        "/MGKRQU+Arial-BoldMT",
+        "/JUDGVI+ArialMT"
+      ],
+      "eps_fonts_embedded_type42": true,
+      "sha256": {
+        "png": "b632226cd5565dd15340c9ef17d8fb4b1c1352766a4d68b502bafae513ee0d23",
+        "tiff": "e2cbf0210b378083d04bb71fe3d01a1c18c79155798effbfb94fcd0f0a37b4d6",
+        "pdf": "37759c61d20849472228cb83e43ab633b10f4742ac8b54b438e61c75f5ca9d04",
+        "eps": "13059937adfbb73a2fade2887304a646ea7ba1193fc97a2ba0d01bb6171282c1"
+      }
+    },
+    {
+      "figure": "ESM1_Fig3",
+      "pixels": [
+        4110,
+        2598
+      ],
+      "raster_dpi": 600,
+      "tiff_colour": "RGB",
+      "vector_size_mm": [
+        173.91944444444442,
+        109.71388888888889
+      ],
+      "pdf_fonts_embedded": [
+        "/STFLIW+ArialMT",
+        "/LSBKPB+Arial-BoldMT"
+      ],
+      "eps_fonts_embedded_type42": true,
+      "sha256": {
+        "png": "84d7a4b3a500f79893d8cd089c52e04334f2b686c3609c2f57539b86044c286c",
+        "tiff": "b909266b5dcffcac554981b80f26c5cee629f641b61c2518c9e57360d364985e",
+        "pdf": "c8aee423ec024856dec61dbedc6a62f9db65181f0bcc9ce7c87606024ebed9ca",
+        "eps": "7c5a070d7bc16833641c9b757b3d296d030d2ac930461cbcacd63a31307b2d4e"
+      }
+    }
+  ]
+}
