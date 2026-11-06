@@ -1,0 +1,39 @@
+Supplementary Figure S2. Model-standardized prevalence of frequent loneliness
+by swallowing problems among adults aged 65 years or older, NHIS 2025.
+Points and horizontal lines show standardized prevalences and 95% confidence
+intervals from survey-weighted logistic models with the M3 covariates. Frequent
+loneliness was defined as always or usually feeling lonely. Swallowing problems
+refer to self-reported difficulties during the preceding 12 months. Both exposure
+levels were standardized over the survey-weighted covariate distribution of the
+same complete-case sample of 8,094 adults, including 429 outcome events. Covariates
+were age group, sex, education, family income-to-poverty ratio, partnership, living
+alone, mobility, hearing, stroke history, in-person contact and telephone/video
+contact. Estimates and variances were pooled over ten official income imputations.
+Prevalences were pooled on the logit scale, the absolute difference on its natural
+scale and the marginal prevalence ratio on the log scale, so the pooled contrasts
+need not exactly equal arithmetic operations on the separately rounded pooled
+prevalences. These model-standardized associations are not causal effects. The
+marginal PR is not the same parameter as the primary conditional Poisson PR.
+
+Supplementary Figure S3. Survey-weighted distribution of all five loneliness
+response categories by swallowing problems among adults aged 65 years or older,
+NHIS 2025.
+Points represent weighted category percentages and horizontal lines show
+Korn-Graubard 95% confidence intervals. Blue circles indicate participants without
+swallowing problems; teal diamonds indicate participants with swallowing problems.
+The analysis includes 7,545 and 686 participants, respectively, with valid exposure
+and outcome responses; the two groups contain 8,231 adults in total. Percentages
+sum to 100% within each exposure group before rounding. The displayed sample sizes
+are unweighted. These distributions are unadjusted for covariates; all ten category
+proportions satisfy the implemented NCHS precision criteria. The primary binary
+outcome combines the usually and always categories. No common proportional-odds
+estimate is superimposed because the planned diagnostic did not support the full
+common-slope specification. The distributions and uncertainty intervals describe
+cross-sectional self-report data and do not establish direction or causation.
+
+Reproduction
+Rscript outputs/12_Extended_Figures_EN.R
+Run from the project root after outputs/10_Extended_Analysis.R. Outputs are two
+300-dpi PNGs, two SVGs and the two-page NHIS2025_Extended_Figures_EN.pdf. Existing
+primary figures and Figure S1 are not changed. PDF pages were rendered and
+visually checked for legibility, clipping and correct marker placement.

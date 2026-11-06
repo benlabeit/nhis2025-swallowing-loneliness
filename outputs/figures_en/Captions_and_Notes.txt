@@ -1,0 +1,115 @@
+NHIS 2025: Swallowing problems and loneliness among adults aged 65 years or older
+Figure captions and usage notes
+English edition, 6 November 2026. Estimates are unchanged from the original analysis.
+
+Suggested use
+Figure 2 addresses the primary research question. Figure 1 provides descriptive
+context. Figure 3 presents a secondary severity analysis. Figure S1 is intended
+for supplementary material. If space is limited, prioritize Figure 2 and report
+the two descriptive prevalences in the text; consider Figure 3 as a secondary figure.
+
+Figure 1. Survey-weighted prevalence of frequent loneliness by self-reported
+swallowing problems among adults aged 65 years or older, NHIS 2025.
+Points indicate weighted prevalences and horizontal lines indicate design-based
+95% confidence intervals calculated using a logit transformation. Frequent
+loneliness was defined as always or usually feeling lonely (LONELY_A=1/2).
+Swallowing problems refer to problems or difficulties during the preceding
+12 months (VSLSWYR_A=1 versus 2). The analysis includes 8,231 adults with valid
+exposure and outcome responses. When numerical age was unavailable, AGE65 was
+used to confirm age 65 years or older for descriptive analyses. The group without
+swallowing problems includes 7,545 adults and 355 events; the group with problems
+includes 686 adults and 83 events. Sample sizes and event counts are unweighted.
+Prevalences and confidence intervals incorporate the final annual adult weight
+(WTFA_A), public-use strata (PSTRAT) and primary sampling units (PPSU). No
+covariate adjustment was performed. These denominators differ from those in
+the regression analyses. Events denote respondents reporting frequent loneliness,
+not incident cases.
+
+Figure 2. Prevalence ratios for frequent loneliness in adults with versus
+without swallowing problems across sequential adjustment models, NHIS 2025.
+All five models use the same complete-case sample of 8,094 adults aged 65 years
+or older, with 429 frequent-loneliness events. Points represent prevalence ratios
+(PRs) from survey-weighted Poisson models with a log link and design-based
+variance estimation; lines represent 95% confidence intervals. The horizontal
+axis is logarithmic and the dashed vertical line marks PR=1. M0 includes no
+covariates. M1 adds age group (65-74, 75-84, 85+) and sex. M2 additionally adjusts
+for educational attainment, family income-to-poverty ratio, partnership, living
+alone, mobility limitations, hearing difficulties and history of stroke. M3
+adds the frequency of in-person and telephone/video contact with close others
+outside the household during a typical week. M3 is the primary model and is
+highlighted by a diamond, color and row shading. M4 is an extended sensitivity
+analysis that additionally adjusts for attendance at religious services and
+meetings of clubs or organizations during the preceding year. Each contact or
+participation variable is modeled as a four-category factor. Results from
+income-adjusted models are pooled across all ten official income imputations
+using Rubin's rules with finite complete-data degrees of freedom. For consistency
+with the analysis script, models without income were also pooled across the ten
+identical copies. Changes in estimates do not quantify causal effects or a
+proportion mediated by social contact.
+
+Figure 3. Secondary analysis of the severity of self-reported swallowing
+difficulties and frequent loneliness, NHIS 2025.
+Points and horizontal lines show PRs and 95% confidence intervals adjusted for
+the M3 covariates, comparing a little difficulty, somewhere in between and a lot
+of difficulty with no swallowing problems. These labels follow the questionnaire
+response options. The original severity codes are ordered 1, 3 and 2; they do not
+form an equally spaced continuous scale. The reference group has PR=1 and no
+artificial confidence interval is plotted. The analysis includes 8,093 adults and
+429 events. Group-specific sample sizes/event counts are 7,420/347 (no problems),
+361/33 (a little), 199/27 (somewhere in between) and 113/22 (a lot). One member of
+the common regression sample has no valid severity response. The small numbers
+of events in the severity groups warrant caution. No trend test was performed;
+points are not connected. Self-reported difficulty is not a clinically validated
+dysphagia severity scale and the results do not establish a causal dose-response
+relationship.
+
+Supplementary Figure S1. Sensitivity analyses of the association between
+swallowing problems and loneliness, NHIS 2025.
+Points and lines indicate PRs and 95% confidence intervals. The primary M3 model
+is included for comparison. Additional rows show M3 in all complete cases for
+that model, M3 excluding proxy interviews, models without and with additional
+adjustment for depressive feelings in an identical sample (N=8,055), and M3 with
+a broader loneliness outcome. Depressive feelings were classified as daily/weekly
+versus less often/never; this variable does not indicate a clinical depression
+diagnosis. The broader outcome includes always, usually or sometimes feeling
+lonely (2,120 events). Comparisons must account for differences in sample
+composition and outcome definition. Supplementary analyses are not adjusted for
+multiplicity. Some fitted values exceed 1 in the depressive-feelings-adjusted
+and broader-outcome Poisson models; these fits should not be interpreted as
+individual probabilities. Attenuation after adjustment for depressive feelings
+does not establish causal mediation. The logistic sensitivity analysis is not
+plotted on the same axis because its effect measure is an odds ratio, not a PR.
+
+General interpretation
+These are cross-sectional associations in the US civilian noninstitutionalized
+population. Exposure and outcome are self-reported. The figures do not establish
+causation and do not represent clinically confirmed dysphagia. "Events" means
+respondents meeting the outcome definition, not incident events.
+
+Files and reproduction
+- Four PNG files: 3,000 x 1,920 pixels each, 300 dpi, white background.
+- Four SVG files: scalable vector graphics. Cairo may store text as glyph paths;
+  edit the R script to change wording reliably.
+- NHIS2025_Figures_EN.pdf: four vector pages with embedded fonts.
+- Data_*.tsv: plotted source data; estimates have not been refitted.
+- 08_Figures_EN.R: complete generator using base R and grid; no new R packages.
+- inputs/tables/: original tables needed by the generator.
+
+Run from the original project directory:
+Rscript -e "Sys.setlocale('LC_ALL','English_United States.utf8'); source('outputs/08_Figures_EN.R',encoding='UTF-8')"
+To reproduce independently, place the generator at outputs/08_Figures_EN.R and
+copy inputs/tables/ to outputs/tables/ within a new project directory. Run the
+command from that project directory. Figures are written to outputs/figures_en/;
+rerunning overwrites those figure files. No regression model is refitted.
+
+Quality checks
+The prevalence axis starts at zero. PR axes are logarithmic and mark PR=1.
+No significance stars or truncated confidence intervals are used. All PDF pages
+were rendered and checked for readability, clipping and marker placement.
+Numbers, references and denominators were checked against the original result
+tables. The English edition changes language and number formatting only.
+
+Source
+CDC/NCHS, National Health Interview Survey 2025, Public-use Sample Adult.
+https://www.cdc.gov/nchs/nhis/documentation/2025-nhis.html
+See the existing analysis plan and report for full methods and limitations.
