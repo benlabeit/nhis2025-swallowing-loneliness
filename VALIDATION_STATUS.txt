@@ -5,10 +5,22 @@ Original public-use data: unchanged files under outputs/source_data/.
 Complete folder tree: included; extract the archive before using RunAll.ps1.
 Original and supplementary analysis code and saved results: included.
 Zotero citation records and manuscript source: included.
-Primary manuscript deliverable: outputs/NHIS2025_Manuscript_EN.docx (reviewed, editable Word manuscript with real Zotero citation fields); outputs/NHIS2025_Manuscript_EN.html is the reviewed browser-readable version.
+Earlier general manuscript deliverable: outputs/NHIS2025_Manuscript_EN.docx (reviewed, editable Word manuscript with real Zotero citation fields); outputs/NHIS2025_Manuscript_EN.html is the reviewed browser-readable version.
 HTML manuscript content and Zotero-rendered references: reviewed in the project workflow.
 DOCX deliverable: included after attested Word layout review.
 Word layout/pagination review: completed (attested by build flag)
 Application-level Word/Zotero Refresh verification: completed (attested by build flag)
+
+DYSPHAGIA JOURNAL VERSION
+Journal manuscript files: master, anonymous manuscript and author-information document included after separate attestation.
+Dysphagia Word layout/pagination review: completed (attested by journal-specific build flag).
+Dysphagia application-level Word/Zotero Refresh: completed (attested by journal-specific build flag).
+Latest primary manuscript version: the Dysphagia files; exact checks and file hashes are recorded in outputs/dysphagia/Validation.txt.
+Journal visual review used native Microsoft Word PDF export and Poppler at 120 dpi; 18 master pages, 16 anonymous pages and 2 author-information pages were inspected.
+Internal QA PDFs and page PNGs remain outside this archive. The internal reviewer PDF is not an anonymous deliverable because Word supplied account-identifying PDF metadata.
+Online Resource 1: outputs/dysphagia/ESM1.pdf; Online Resource 2: outputs/dysphagia/ESM2.xlsx.
+Journal artwork, source captions, genuine Dysphagia CSL files and Zotero export: included.
+Remaining author input: Anel Karisik competing interests, study-specific contributions, local ethics/consent determination and other details recorded in the author-information sheet.
+Operational GitHub/review screenshots: excluded from the scientific archive.
 
 This package does not imply journal submission, peer review or final author approval.
