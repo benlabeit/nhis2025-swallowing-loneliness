@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "extracted_utc": "2026-11-06T16:48:57.113628+00:00",
+  "purpose": "Evidence-preserving transfer of the approved P1 author composition to P2; no P1 files modified.",
+  "primary_source": {
+    "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\NHIS_Manuscript.docx",
+    "modified_utc": "2026-11-06T15:26:44.008005+00:00",
+    "bytes": 662373,
+    "sha256": "bc17bca05bc8abe21c305e4d421be55070e758cb8cfa44466ceb62ac53230205"
+  },
+  "sources": [
+    {
+      "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\NHIS_Manuscript.docx",
+      "modified_utc": "2026-11-06T15:26:44.008005+00:00",
+      "bytes": 662373,
+      "sha256": "bc17bca05bc8abe21c305e4d421be55070e758cb8cfa44466ceb62ac53230205"
+    },
+    {
+      "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\NHIS_Manuscript_Final.docx",
+      "modified_utc": "2026-11-06T15:24:11.927141+00:00",
+      "bytes": 657699,
+      "sha256": "5712a2809e01583fbefb69fbb5fd00243b9a1a0c089ff4411cb5d643478e1093"
+    },
+    {
+      "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\NHIS_Manuscript.txt",
+      "modified_utc": "2026-11-06T15:13:02.371071+00:00",
+      "bytes": 44470,
+      "sha256": "24e6e474436bc4bbba5b615b4e3befb549088bbd940812efafeae2703d3c7e30"
+    },
+    {
+      "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\NHIS_Manuscript_Final.txt",
+      "modified_utc": "2026-11-06T15:13:02.371071+00:00",
+      "bytes": 44470,
+      "sha256": "24e6e474436bc4bbba5b615b4e3befb549088bbd940812efafeae2703d3c7e30"
+    },
+    {
+      "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\author_information_provenance.txt",
+      "modified_utc": "2026-11-06T15:13:02.073383+00:00",
+      "bytes": 766,
+      "sha256": "b5bf7cfb274dc4e8ef38b3d8a8ef272204e7eac75f89bbf372e3a0df28aebc37"
+    },
+    {
+      "path": "C:\\Users\\benlabeit\\Documents\\Codex\\2026-11-06\\nhis-p1-analyse\\outputs\\author_checks.txt",
+      "modified_utc": "2026-11-06T15:13:02.072380+00:00",
+      "bytes": 1889,
+      "sha256": "c3aee9b7191cf11bf9e3845d050428773b88fc841c1d7ec341afd1feb8bbf819"
+    }
+  ],
+  "verification": {
+    "title_page_matches_final_docx_and_text": true,
+    "approved_order_matches_parent_read_of_user_request": true,
+    "parent_verified_thread_id": "01a1b12d-9216-74a2-8ba6-0ce38f158ab3",
+    "author_count": 11,
+    "affiliation_count": 7,
+    "orcid_found": false,
+    "notes": [
+      "Source DOCX title page and declaration text were inspected read-only.",
+      "The most recently modified P1 manuscript is NHIS_Manuscript.docx; title-page information is identical to NHIS_Manuscript_Final.docx and both TXT counterparts.",
+      "Parent agent independently read the P1 chat and confirmed the explicit user-requested order."
+    ]
+  },
+  "author_line_text": "Cinja Huber [1], Gero Lueg [2], Anel Karisik [3,4], Sriramya Lapa [5], Anne Jung [1], Orhan Aktas [1], Michael Gliem [1], Paul Muhle [6], Sonja Suntrup-Krueger [6], Rainer Dziewas [7], Bendix Labeit [1]",
+  "authors": [
+    {
+      "order": 1,
+      "name": "Cinja Huber",
+      "initials": "C.H.",
+      "affiliation_numbers": [
+        1
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "C.H. has received travel expenses from Phagenesis Ltd and from the German Society for Dysphagia (DGD).",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 2,
+      "name": "Gero Lueg",
+      "initials": "G.L.",
+      "affiliation_numbers": [
+        2
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "G.L. has received honoraria from Bristol Myers Squibb, has received travel expenses from German Dysphagia Society (DGD) and German Geriatric Society (DGG), and receives additional funding through the Advanced Clinician Scientist Program of Ruhr University Bochum.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 3,
+      "name": "Anel Karisik",
+      "initials": "A.K.",
+      "affiliation_numbers": [
+        3,
+        4
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": null,
+      "competing_interests_status": "not verified; do not infer no competing interests"
+    },
+    {
+      "order": 4,
+      "name": "Sriramya Lapa",
+      "initials": "S.L.",
+      "affiliation_numbers": [
+        5
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "S.L. has received honoraria and travel grants for lectures and conferences from the German Society for Clinical Neurophysiology and Functional Imaging (DGKN), Phagenesis Ltd, the United European Gastroenterology (UEG), the German Stroke Society (DSG), argenx, AbbVie, and Merck, and serves as a consultant for Phagenesis Ltd.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 5,
+      "name": "Anne Jung",
+      "initials": "A.J.",
+      "affiliation_numbers": [
+        1
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "A.J. has received a travel grant from the German Dysphagia Society (DGD) and honoraria for lectures from the German Society for Clinical Neurophysiology and Functional Imaging (DGKN) and Phagenesis Ltd.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 6,
+      "name": "Orhan Aktas",
+      "initials": "O.A.",
+      "affiliation_numbers": [
+        1
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "O.A. has received personal fees from Alexion, Amgen, AstraZeneca, Roche, Sanofi, and UCB.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 7,
+      "name": "Michael Gliem",
+      "initials": "M.G.",
+      "affiliation_numbers": [
+        1
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "M.G. receives speaking fees from Novartis, Pfizer, Daiichi Sankyo, and Johnson & Johnson.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 8,
+      "name": "Paul Muhle",
+      "initials": "P.M.",
+      "affiliation_numbers": [
+        6
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "P.M. has received honoraria for lectures from Nestlé Health Science, Phagenesis Ltd, and Alexion Pharma.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 9,
+      "name": "Sonja Suntrup-Krueger",
+      "initials": "S.S.-K.",
+      "affiliation_numbers": [
+        6
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "S.S.-K. has received honoraria from Phagenesis Ltd, and served as unpaid Congress President 2024 of the European Society for Swallowing Disorders (ESSD).",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 10,
+      "name": "Rainer Dziewas",
+      "initials": "R.D.",
+      "affiliation_numbers": [
+        7
+      ],
+      "corresponding_author": false,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "R.D. is a former advisory board member of Phagenesis Ltd, serves as unpaid President of the European Society for Swallowing Disorders (ESSD) and has received consulting fees from Danone, Johnson and Johnson and Argenx.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    },
+    {
+      "order": 11,
+      "name": "Bendix Labeit",
+      "initials": "B.L.",
+      "affiliation_numbers": [
+        1
+      ],
+      "corresponding_author": true,
+      "orcid": null,
+      "orcid_status": "not provided in reviewed P1 final DOCX/TXT or provenance",
+      "competing_interests": "B.L. has received research funding from the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation), Clexio Bioscience Ltd, the Medical Faculty of the University of Münster, and the Gesellschaft von Freunden und Förderern der Heinrich-Heine-Universität Düsseldorf e.V.; scientific prizes from the German Geriatric Society (DGG) in conjunction with the Rolf and Hubertine Schiffbauer Foundation and the German Neurological Society (DGN); and honoraria and/or travel grants for lectures and conferences from the German Society for Clinical Neurophysiology and Functional Imaging (DGKN), the European Stroke Organization (ESO), the Society for Clinical Nutrition and Metabolism (ESPEN), Phagenesis Ltd, the German Society for Neurology (DGN), the European Society for Swallowing Disorders (ESSD), the United European Gastroenterology (UEG), the University of Strasbourg, the German Society for Muscular Dystrophy (DGM), the German Society for Nutritional Medicine (DGEM), the German Society for Internal Medicine (DGIM), the German Stroke Society (DSG), the University of Zurich, the Confederation of European Otorhinolaryngology – Head and Neck Surgery (CEORL-HNS), CONGRES ORPHEO, the Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI), the DGG, Novartis, and Danone.",
+      "competing_interests_status": "Transfer of the existing P1 disclosure to P2 explicitly approved by the user on 2026-11-06; disclosure text unchanged."
+    }
+  ],
+  "affiliations": [
+    {
+      "number": 1,
+      "text": "Department of Neurology, Medical Faculty, University Hospital Duesseldorf, Duesseldorf, Germany."
+    },
+    {
+      "number": 2,
+      "text": "Department of Geriatric Medicine, Marien Hospital Herne, Ruhr University Bochum, Herne, Germany."
+    },
+    {
+      "number": 3,
+      "text": "Department of Neurology, Medical University of Innsbruck, Innsbruck, Austria"
+    },
+    {
+      "number": 4,
+      "text": "VASCage-Centre on Clinical Stroke Research, Innsbruck, Austria"
+    },
+    {
+      "number": 5,
+      "text": "Department of Neurology, Medical Faculty, University Hospital Frankfurt, Frankfurt, Germany"
+    },
+    {
+      "number": 6,
+      "text": "Department of Neurology, University Hospital Muenster, Muenster, Germany."
+    },
+    {
+      "number": 7,
+      "text": "Department of Neurology and Neurorehabilitation, Klinikum Osnabrueck, Osnabrueck, Germany."
+    }
+  ],
+  "corresponding_author": {
+    "name": "Bendix Labeit",
+    "affiliation_number": 1,
+    "address": "Department of Neurology, Medical Faculty and University Hospital Duesseldorf, Moorenstraße 5, 40225, Duesseldorf, Germany.",
+    "email": "benlabeit@gmail.com",
+    "source_text": "Corresponding author: Bendix Labeit. Department of Neurology, Medical Faculty and University Hospital Duesseldorf, Moorenstraße 5, 40225, Duesseldorf, Germany. Email: benlabeit@gmail.com",
+    "telephone": null,
+    "telephone_note": "No personal telephone transferred, consistent with P1 author_checks.txt."
+  },
+  "original_provenance": {
+    "source_path_reported_in_P1": "C:/Users/benlabeit/OneDrive/Files/Wissenschaft/LLM und Dysphagie/PLOS digital health/Revision/Revised_Manuscript_clean.docx",
+    "source_title": "Benchmarking commercial large language model systems for guideline-concordant dysphagia management",
+    "source_modified_as_reported": "2026-10-30T09:33:57",
+    "source_sha256_as_reported": "9d4067a931564e2dc0276f6ee376afd8d74202c6554500bb5620f4256c5b76d0",
+    "scope": "Information reported by P1 author provenance; original LLM source was not reopened in this extraction.",
+    "anel_affiliation_source": {
+      "title": "Antidepressant Intake and Recovery of Dysphagia After Acute Ischemic Stroke",
+      "doi": "10.1161/STROKEAHA.125.054073",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41685445/",
+      "status": "Author-to-affiliation mapping verified during P1 and recorded in P1 provenance; not a P2 competing-interest disclosure."
+    }
+  },
+  "funding": {
+    "source_text": "Bendix Labeit's salary was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation), project number 529859742, under the Walter Benjamin Programme.",
+    "scope": "Named salary support for Bendix Labeit, not a statement that the whole P2 study was funded.",
+    "project_specific_applicability_confirmed": true,
+    "transfer_note": "The user explicitly approved transfer of the P1 salary-support statement to P2 on 2026-11-06. This approval concerns the existing named salary support, not an inferred whole-study funding or funder-role statement.",
+    "approval_source": "p2_transfer_approval"
+  },
+  "competing_interests": {
+    "paragraphs": [
+      "C.H. has received travel expenses from Phagenesis Ltd and from the German Society for Dysphagia (DGD).",
+      "G.L. has received honoraria from Bristol Myers Squibb, has received travel expenses from German Dysphagia Society (DGD) and German Geriatric Society (DGG), and receives additional funding through the Advanced Clinician Scientist Program of Ruhr University Bochum.",
+      "S.L. has received honoraria and travel grants for lectures and conferences from the German Society for Clinical Neurophysiology and Functional Imaging (DGKN), Phagenesis Ltd, the United European Gastroenterology (UEG), the German Stroke Society (DSG), argenx, AbbVie, and Merck, and serves as a consultant for Phagenesis Ltd.",
+      "A.J. has received a travel grant from the German Dysphagia Society (DGD) and honoraria for lectures from the German Society for Clinical Neurophysiology and Functional Imaging (DGKN) and Phagenesis Ltd.",
+      "O.A. has received personal fees from Alexion, Amgen, AstraZeneca, Roche, Sanofi, and UCB.",
+      "M.G. receives speaking fees from Novartis, Pfizer, Daiichi Sankyo, and Johnson & Johnson.",
+      "P.M. has received honoraria for lectures from Nestlé Health Science, Phagenesis Ltd, and Alexion Pharma.",
+      "S.S.-K. has received honoraria from Phagenesis Ltd, and served as unpaid Congress President 2024 of the European Society for Swallowing Disorders (ESSD).",
+      "R.D. is a former advisory board member of Phagenesis Ltd, serves as unpaid President of the European Society for Swallowing Disorders (ESSD) and has received consulting fees from Danone, Johnson and Johnson and Argenx.",
+      "B.L. has received research funding from the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation), Clexio Bioscience Ltd, the Medical Faculty of the University of Münster, and the Gesellschaft von Freunden und Förderern der Heinrich-Heine-Universität Düsseldorf e.V.; scientific prizes from the German Geriatric Society (DGG) in conjunction with the Rolf and Hubertine Schiffbauer Foundation and the German Neurological Society (DGN); and honoraria and/or travel grants for lectures and conferences from the German Society for Clinical Neurophysiology and Functional Imaging (DGKN), the European Stroke Organization (ESO), the Society for Clinical Nutrition and Metabolism (ESPEN), Phagenesis Ltd, the German Society for Neurology (DGN), the European Society for Swallowing Disorders (ESSD), the United European Gastroenterology (UEG), the University of Strasbourg, the German Society for Muscular Dystrophy (DGM), the German Society for Nutritional Medicine (DGEM), the German Society for Internal Medicine (DGIM), the German Stroke Society (DSG), the University of Zurich, the Confederation of European Otorhinolaryngology – Head and Neck Surgery (CEORL-HNS), CONGRES ORPHEO, the Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI), the DGG, Novartis, and Danone."
+    ],
+    "missing_authors": [
+      "Anel Karisik"
+    ],
+    "transfer_note": "The user explicitly approved transfer of the available P1 author-specific competing-interest statements to P2 on 2026-11-06. Anel Karisik's declaration remains open; no statement of absence of competing interests is inferred.",
+    "direct_user_authorship_of_text_verified": false,
+    "p2_transfer_confirmed": true,
+    "approval_source": "p2_transfer_approval"
+  },
+  "equal_contribution": null,
+  "author_contributions": null,
+  "ethics_statement_transferred": false,
+  "remaining_author_checks": [
+    "ORCIDs were not provided; retain null rather than infer.",
+    "Anel Karisik competing-interest disclosure is missing.",
+    "No P2 contribution roles or equal-contribution status inferred.",
+    "No institutional ethics determination copied from P1."
+  ],
+  "p2_transfer_approval": {
+    "approved_date": "2026-11-06",
+    "recorded_utc": "2026-11-06T17:11:29.976250+00:00",
+    "source": "Explicit user reply in the current P2 conversation",
+    "exact_user_reply": "Angaben aus Projekt 1 übernehmen; Anels Erklärung noch offen",
+    "scope": "Transfer the existing P1 funding and available author-specific competing-interest statements to P2; Anel Karisik declaration remains open."
+  }
+}
