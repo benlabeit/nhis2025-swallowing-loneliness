@@ -1,0 +1,30 @@
+# Local package/runtime caches
+work/R-library/
+node_modules/
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Generated intermediate analysis objects and logs
+work/*.rds
+work/*.log
+work/figures_qa/
+work/figures_en_qa/
+work/integrations/
+work/repository/
+
+# Redundant downloadable bundles; source CDC ZIP files remain tracked
+outputs/*.zip
+
+# Local secrets and editor/system files
+.env
+.env.*
+*credentials*.json
+*token*.json
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
