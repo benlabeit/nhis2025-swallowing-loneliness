@@ -1,0 +1,26 @@
+FINAL MANUSCRIPT VALIDATION RECORD
+6 November 2026
+
+Validated deliverables
+- outputs/NHIS2025_Manuscript_EN.docx: 564,854 bytes.
+- DOCX SHA-256: 3ef442082910f8c882047582a051bec7faefc0d3e6ad4acda374536841c33808.
+- outputs/NHIS2025_Manuscript_EN.html: 727,983 bytes; regenerated from the latest Zotero export.
+
+Zotero and Word verification
+The references are real items in the Zotero collection "NHIS 2025 P2 Swallowing and Loneliness" (collection key U3YQJVQN). The manuscript uses the NLM/Vancouver citation-sequence style. Native Microsoft Word/Zotero Refresh was run successfully twice without errors, and the document was saved. The saved DOCX retains 29 editable Zotero citation fields, one Zotero bibliography field, and 26 bibliography entries. The final Maki reference includes article number 190, updated in Zotero and refreshed in Word.
+
+Rendering and visual verification
+The canonical render_docx.py workflow was attempted but could not complete because LibreOffice/soffice was unavailable. It did not successfully render this document. The actual fallback was native Microsoft Word PDF export followed by Poppler rendering at 120 dpi.
+
+The Word PDF contains 15 pages. All 15 rendered pages were visually inspected: pages 1-5 by the coordinating reviewer, pages 6-10 by the statistical reviewer, and pages 11-15 by the literature reviewer. After the final article-number correction, the document was exported and rendered again. Thirteen page images were byte-identical to the reviewed images; the two changed pages, 9 and 10, were visually rechecked by the coordinating reviewer and passed. The final page images show readable text, tables, figures and references without identified clipping or overflow.
+
+The final DOCX hash, 29 citation fields, one bibliography field, 15 page images, and thirteen unchanged page images were independently checked during packaging. Native application actions and visual inspection outcomes are recorded from the reviewers who performed those checks.
+
+HTML verification
+The HTML manuscript was regenerated from the final citation export. Its 29 citation-cluster texts match the Zotero-rendered texts, its 26 references are included, and its three tables match the DOCX table cells. Three main figures are embedded without external dependencies. Source, schema, content and embedding checks are recorded separately from native Word visual review.
+
+Rebuilding and editing
+The included manuscript builder creates an editable Word document with actual Zotero item links. Regenerating or substantively editing a document requires new Word/Zotero Refresh and visual page checks; this validation applies to the saved final deliverables identified above. The earlier build-stage audit is historical and is superseded for final application and visual validation by this record.
+
+Outstanding author decisions before journal submission
+Author names, order, affiliations, corresponding-author details, contributions, funding, competing interests and acknowledgments still require author input. The authors must determine any applicable institutional ethics/exemption statement, review and approve the manuscript and analysis, supply any required AI-assistance disclosure, select a journal, and apply its formatting and repository-access requirements. These checks do not constitute author approval, peer review or journal submission. See outputs/Manuscript_submission_notes.txt.

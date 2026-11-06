@@ -5,10 +5,10 @@ Original public-use data: unchanged files under outputs/source_data/.
 Complete folder tree: included; extract the archive before using RunAll.ps1.
 Original and supplementary analysis code and saved results: included.
 Zotero citation records and manuscript source: included.
-Primary manuscript deliverable: outputs/NHIS2025_Manuscript_EN.html.
+Primary manuscript deliverable: outputs/NHIS2025_Manuscript_EN.docx (reviewed, editable Word manuscript with real Zotero citation fields); outputs/NHIS2025_Manuscript_EN.html is the reviewed browser-readable version.
 HTML manuscript content and Zotero-rendered references: reviewed in the project workflow.
-DOCX deliverable: NOT INCLUDED; editable Word delivery is deferred until application-level layout review is complete.
-Word layout/pagination review: PENDING; no completed visual review is asserted by this package.
-Application-level Word/Zotero Refresh verification: PENDING; structural citation checks alone are not a completed application-level Refresh test.
+DOCX deliverable: included after attested Word layout review.
+Word layout/pagination review: completed (attested by build flag)
+Application-level Word/Zotero Refresh verification: completed (attested by build flag)
 
 This package does not imply journal submission, peer review or final author approval.

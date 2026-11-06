@@ -12,16 +12,15 @@ clinically confirmed dysphagia. Estimates describe associations, not causal effe
 
 Download `NHIS2025_Complete_Project.zip` and extract it before running the project.
 The archive contains the complete folder tree, original data, analysis code,
-results, literature records, HTML manuscript, actual Zotero citation data and figure files. The
+results, literature records, reviewed Word and HTML manuscripts, actual Zotero citation data and figure files. The
 expanded files displayed at the top level of the GitHub repository are a selected
 convenience view; they are not a substitute for extracting the complete archive.
 
-Open `outputs/NHIS2025_Manuscript_EN.html` as the primary manuscript deliverable.
-Its content and Zotero-rendered references have been reviewed. The editable Word
-version is withheld from the archive until Word layout review can be completed;
-it will be added after that check. Read `VALIDATION_STATUS.txt` inside the archive
-for the current Word-layout and Zotero-refresh status. HTML review does not
-constitute a Word application-level Refresh or pagination test.
+Open `outputs/NHIS2025_Manuscript_EN.docx` for the reviewed, editable English
+manuscript. Its citation fields link to real items in the Zotero project library.
+The reviewed `outputs/NHIS2025_Manuscript_EN.html` provides a browser-readable
+version with Zotero-rendered references. Read `VALIDATION_STATUS.txt` inside the
+archive for the recorded Word-layout and application-level Zotero-refresh checks.
 
 ## Project contents
 
@@ -35,8 +34,8 @@ constitute a Word application-level Refresh or pagination test.
 - `outputs/12_Extended_Figures_EN.R`: supplementary English figure generator.
 - `outputs/literature/`: verified reference metadata and search documentation.
 - `outputs/source_data/`: canonical, unchanged downloaded public-use CSV files and CDC ZIP archives.
-- `outputs/NHIS2025_Manuscript_EN.html`: primary English manuscript, with references rendered by Zotero.
-- `outputs/NHIS2025_Manuscript_EN.docx`: added only after Word layout review; not included while that review is pending.
+- `outputs/NHIS2025_Manuscript_EN.docx`: reviewed, editable English manuscript with citation fields linked to real Zotero library items.
+- `outputs/NHIS2025_Manuscript_EN.html`: reviewed English manuscript for browser reading, with references rendered by Zotero.
 - `outputs/manuscript_sources/`: manuscript content, builder and Zotero project script.
 - `work/raw/`: created by `RunAll.ps1` from the canonical source files when needed; omitted from the archive to avoid duplicated data.
 - `work/docs/`: official CDC codebook and methodological documents.
