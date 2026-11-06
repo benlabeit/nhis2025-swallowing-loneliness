@@ -1,0 +1,18 @@
+MANUSCRIPT HANDOVER NOTES
+6 November 2026
+
+The English manuscript uses an IMRaD structure and the NLM/Vancouver citation-sequence style. It reports the original primary analysis separately from supplementary analyses planned after the primary results were known. No target journal has yet been selected.
+
+Information that the authors must supply before journal submission
+- Author names, order, affiliations, corresponding-author details, and contributions.
+- Funding, relevant competing interests, and acknowledgments. These statements have not been invented or presumed negative.
+- The authors' institutional determination concerning review/exemption for this secondary public-use-data analysis, if required. Public data use alone is not presented as an institutional ethics determination.
+- Any required disclosure of AI assistance, consistent with the selected journal's policy. The authors must review the analysis, source interpretation, and final text and accept responsibility for them.
+- Journal-specific word limits, abstract structure, figure/table placement, reporting forms, and repository availability. The repository is currently private; a journal-ready public-access statement requires the authors' publication decision.
+
+Scientific scope
+The data are cross-sectional. The manuscript describes associations between self-reported prior-year swallowing problems and frequent loneliness in the civilian noninstitutionalized US population aged 65 years or older. It does not establish clinical dysphagia, aspiration, temporal direction, treatment effects, or causal mediation. Contact and participation measures do not represent all dimensions of social isolation.
+
+The literature search is a structured narrative search, not a registered systematic review. Search queries, selected evidence, verification levels, and limitations are supplied in the literature directory. Publication priority/first-study claims are intentionally avoided.
+
+The manuscript and supplementary figures use English labels. Original plans and some audit/report materials retain their original German language to preserve the analysis record.

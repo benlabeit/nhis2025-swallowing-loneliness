@@ -1,0 +1,167 @@
+SUPPLEMENTARY STATISTICAL RESULTS
+NHIS 2025: self-reported swallowing problems and loneliness in adults aged 65+
+6 November 2026
+
+Status and scope
+The supplementary plan was documented after the primary findings were known and
+before the additional analyses were run. These analyses are supportive, not new
+confirmatory primary analyses. The original exposure definition, primary outcome,
+primary M3 model and primary results have not been changed. All analyses retain
+the NHIS final adult weight, public-use strata and PSUs, with domain analyses
+formed after defining the design on the full adult file. Income-adjusted models
+use all ten official income imputations.
+
+1. Model-standardized absolute prevalence
+Survey-logistic models were standardized over the survey-weighted covariate
+distribution of the analytic sample using survey::svypredmeans. For M3, the
+standardized prevalence of frequent loneliness was 4.27% (95% CI 3.77-4.83)
+without swallowing problems and 7.94% (6.27-10.01) with swallowing problems.
+The absolute prevalence difference was 3.67 percentage points (1.75-5.60), and
+the marginal prevalence ratio was 1.861 (1.430-2.421), in 8,094 participants.
+These are standardized associations, not causal effects. The marginal ratio is
+not the identical estimand as the primary conditional Poisson PR of 1.835.
+
+In the identical depression-complete sample (N=8,055), the model without
+depressive-feelings adjustment yielded standardized prevalences of 4.27% and
+7.96%, difference 3.70 percentage points (1.76-5.63), and marginal PR 1.866
+(1.433-2.430). Additional adjustment for depressive feelings yielded 4.38%
+(3.86-4.97) and 6.64% (5.24-8.38), difference 2.26 percentage points
+(0.60-3.92), and marginal PR 1.516 (1.161-1.980). The reduction does not
+establish mediation or resolve whether depressive feelings precede the exposure.
+
+For the broader endpoint (always/usually/sometimes lonely; N=8,094), standardized
+prevalences were 22.92% (21.82-24.05) and 29.26% (25.75-33.04), difference
+6.34 percentage points (2.58-10.11), and marginal PR 1.277 (1.119-1.456).
+Logistic models keep individual fitted probabilities between zero and one,
+addressing the prediction-range problem seen in the earlier Poisson sensitivity
+models. This does not prove that the logistic mean specification is correct.
+
+Variance and pooling
+Within each imputation, the predictive-margin covariance includes the model
+coefficient and estimated covariate-distribution components supplied by survey.
+Prevalences were pooled on the logit scale, differences on the identity scale,
+and prevalence ratios on the log scale after delta-method transformation.
+Rubin pooling used finite complete-data residual design degrees of freedom.
+Consequently a pooled contrast need not equal an arithmetic operation on the
+separately transformed and rounded pooled prevalences. Direct weighted
+standardization was checked against svypredmeans within 1e-7 in every fit.
+
+2. Missingness and response-weighting sensitivity
+The common complete sample includes 8,094 of 8,492 confirmed older adults.
+Excluded participants had a larger weighted share aged 85+ among those with
+known age (15.50% versus 9.41%) and a larger weighted share of proxy interviews
+(8.62% versus 4.59%). These comparisons are descriptive and do not establish
+missing at random. The 24 persons classified as >=65 only through AGE65 remain
+outside the age-adjusted response-weighting target.
+
+The response model targeted the 8,468 adults with numerical age >=65 and used
+age group, region, adult household count, any children in the household and
+proxy status, all fully observed. Fitted inclusion probabilities ranged from
+0.7747 to 0.9721. The weighted inclusion fraction was 0.9530. Stabilized
+response multipliers among included cases ranged from 0.9804 to 1.2301; the
+median was 0.9943 and the 99th percentile 1.0563. The combined-weight Kish
+effective sample size was 6,024; this describes unequal weights and is not the
+full design-based effective sample size accounting for clustering.
+
+The response-weighted M3 Poisson PR was 1.830 (95% CI 1.411-2.373). The joint
+estimating-equation linearization includes uncertainty from estimating the
+response-propensity coefficients. The analytic derivative of the outcome score
+with respect to those coefficients was used to correct the outcome influence
+function; score contributions were aggregated within the original design's
+strata and PSUs. The outcome-only covariance component reproduced the standard
+survey::svyglm covariance with a maximum absolute discrepancy of 5.3e-12 over
+the ten imputations. The propensity-only covariance was also checked.
+
+Winsorizing response multipliers at their unweighted 1st and 99th percentiles
+affected 74 upper-tail records and no lower-tail records. The resulting PR was
+1.832 (1.413-2.376). Its confidence interval treats the estimated/truncated
+weights as fixed, so this is a conditional diagnostic rather than a second
+fully propagated uncertainty analysis.
+
+The similarity to the primary estimate supports robustness to selection
+associated with the limited observed baseline features in the response model.
+It does not exclude bias from unmeasured predictors of missingness, incorrect
+response-model specification, or missingness depending directly on unobserved
+loneliness or swallowing problems. Extrapolation to institution residents
+remains unsupported.
+
+3. Table 1 and NCHS precision assessment
+Table 1 files provide weighted categorical characteristics, unweighted category
+counts, valid denominators and explicit missingness for both the available-data
+exposure groups and the common complete-case sample. The income table pools
+weighted category proportions across ten imputations and reports the range of
+unweighted category counts. Imputed income is not presented as observed income.
+No baseline significance tests were added.
+
+All six primary descriptive prevalence estimates passed the implemented NCHS
+proportion criteria, as did their complements. All 164 non-income Table 1 rows
+and all ten five-category loneliness proportions also passed. The new precision
+tables use Korn-Graubard beta limits with effective sample sizes capped at nominal
+sample size and a finite-df adjustment. The original primary figures used logit
+limits and remain unchanged; these two interval constructions are not identical.
+Income rows report pooled percentages and standard errors, with n-ranges; the
+non-imputed NCHS proportion screen was not mechanically applied to the pooled
+income percentages. No NCHS proportion rule was applied to regression PRs.
+
+For participants with swallowing problems, frequent loneliness was 10.34%
+(Korn-Graubard 95% CI 8.04-13.04), versus 4.17% (3.67-4.71) without problems.
+The corresponding effective denominators were about 610 and 5,886, compared
+with nominal denominators of 686 and 7,545. The design degrees of freedom
+for these domains were 334 and 561, respectively. These checks address
+statistical precision, not measurement validity or selection bias.
+
+4. Full loneliness distribution and ordinal-model diagnostic
+Weighted category percentages (no swallowing problems / swallowing problems)
+were: never 54.76/39.45; rarely 22.83/25.06; sometimes 18.23/25.15;
+usually 1.80/4.49; always 2.37/5.86. Denominators were 7,545 and 686,
+respectively. Categories sum to 100% within each group up to rounding.
+
+Four cumulative survey-logistic models with M3 adjustment yielded exposure ORs:
+- At least rarely versus never: 1.495 (95% CI 1.217-1.836).
+- At least sometimes versus rarely/never: 1.453 (1.178-1.792).
+- At least usually versus sometimes/rarely/never: 1.998 (1.479-2.699).
+- Always versus all other responses: 1.923 (1.301-2.842).
+These are odds ratios, not prevalence ratios, and are supplemental threshold-
+specific summaries rather than additional primary tests.
+
+Cross-threshold coefficient covariance was estimated jointly using survey
+influence functions. Sixty-nine contrasts compared 23 non-intercept slopes
+across three alternative thresholds with the primary >=usually threshold.
+Rubin pooling preceded a conservative Bonferroni diagnostic. One contrast
+rejected slope equality: family poverty ratio >=400% versus <100%, at least
+rarely compared with at least usually (unadjusted p=0.000543; adjusted p=0.0375).
+The exposure's own three slope contrasts did not reject after this correction.
+Because the full proportional-odds specification was not supported, no single
+common ordinal OR was fitted or promoted. Failure of a nuisance slope is enough
+to question the specified common-slope model; it is not evidence that the
+swallowing association necessarily differs across thresholds. A partial
+proportional-odds model would require further explicitly exploratory work.
+
+Files and checks
+09_Analyseplan_Nachtrag.txt: dated supplementary plan.
+10_Extended_Analysis.R: full reproducible code; does not modify primary outputs.
+extended_tables/: all estimates, denominator/precision flags and diagnostics.
+work/extended_analysis.log: execution log.
+work/extended_models_summary.rds: compact pooled estimates/covariances.
+12_Extended_Figures_EN.R: reproducible supplementary figure generator.
+
+Key limitations for the manuscript
+All supplementary decisions were made after seeing the primary findings.
+Model standardization remains associational; the exposure and several
+covariates may have different or overlapping time windows. Response weighting
+requires assumptions that the data cannot establish. The ordinal diagnostic
+is conservative and still only a model-assumption check. Supplementary effect
+estimates were not multiplicity-adjusted, except the explicitly labeled
+proportional-odds diagnostic. Primary and supportive findings should be
+distinguished in the manuscript, and no causal mediation effect should be claimed.
+
+Methodological sources
+Graubard BI, Korn EL. Predictive margins with survey data. Biometrics. 1999;
+55:652-659. See official implementation:
+https://r-survey.r-forge.r-project.org/pkgdown/docs/reference/svypredmeans.html
+Bieler GS, Brown GG, Williams RL, Brogan DJ. Estimating model-adjusted risks,
+risk differences, and risk ratios from complex survey data. Am J Epidemiol.
+2010;171:618-623. doi:10.1093/aje/kwp440.
+Parker JD, Talih M, Malec DJ, et al. National Center for Health Statistics data
+presentation standards for proportions. Vital Health Stat 2. 2017;(175);
+corrected tables 2021. https://www.cdc.gov/nchs/media/pdfs/2024/09/sr02_175.pdf

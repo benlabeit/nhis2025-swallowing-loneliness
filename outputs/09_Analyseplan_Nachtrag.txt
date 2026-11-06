@@ -1,0 +1,77 @@
+NHIS 2025 - Project 2: supplementary analysis plan
+Dated 6 November 2026. Written after the primary results were known and before
+the supplementary estimates below were calculated. These are post-primary,
+supportive analyses, not externally preregistered confirmatory tests.
+
+1. Standardized absolute prevalence
+Fit survey-weighted logistic models with the same M3 covariates and common
+complete-case sample. Use survey::svypredmeans (Korn/Graubard predictive margins)
+to standardize each exposure level over the survey-weighted covariate distribution
+of that analytic sample. Report prevalence for swallowing problems absent/present,
+absolute prevalence difference, and marginal prevalence ratio. Within-imputation
+variance includes model and estimated covariate-distribution components as
+implemented in survey; use delta methods for logit prevalences and log PR.
+Pool transformed estimates/variances over ten official income imputations with
+Rubin's rules and finite complete-data residual design degrees of freedom.
+Add M3 on the depression-complete sample with and without depressive-feelings
+adjustment, plus the broader loneliness endpoint on the common sample. These are
+model-standardized associations, not causal risks or potential-outcome effects.
+
+2. Missingness and response weighting
+Compare included (8,094) and excluded (398) older adults descriptively on observed
+demographic and health characteristics, with missing values explicit. Response
+weighting targets adults with known numerical age >=65 (8,468); the 24 adults
+classified using AGE65 alone remain excluded from age-adjusted inference.
+Fit a survey-logistic probability of inclusion in the common complete sample
+using fully observed baseline characteristics: age group, region, adult household
+count (1/2/3+), any children in household and proxy status. These predictors are
+selected before the new fit and do not use outcome/exposure values missing from
+the excluded cases. No p-value-driven selection. Stabilized response multipliers
+are weighted complete-case proportion divided by fitted inclusion probability.
+Fit M3 Poisson models under the resulting survey weights, over ten income
+imputations. For untruncated multipliers, use stacked estimating-equation Taylor
+linearization incorporating estimation of propensity coefficients, with score
+contributions aggregated in the original full-sample strata/PSU design. Verify
+the outcome-only component against survey::svyglm covariance. As an additional
+diagnostic, winsorize multipliers at their unweighted 1st/99th percentiles among
+included cases; report the result with conditional (fixed-weight) variance,
+clearly distinguished from the primary response-weighting sensitivity.
+Report propensity ranges, multiplier quantiles, combined-weight ranges and
+weight-based effective sample size. This sensitivity assumes selection is
+explainable by these measured baseline predictors and cannot resolve MNAR bias.
+
+3. Descriptive Table 1 and precision
+Display weighted categorical characteristics among adults >=65 with known
+swallowing status (and separately the common complete sample). Use variable-
+specific valid denominators, unweighted n and explicit missing counts. Income
+percentages average the ten official imputations; report ranges of unweighted
+category counts because imputed category membership varies. No baseline p-values.
+For publication prevalences, implement NCHS proportion standards using design-
+based variance, effective denominator n capped at nominal n, Korn-Graubard beta
+confidence limits with finite-df adjustment, nominal/effective n >=30, absolute
+CI width and relative-width rules, and review flags for 0/1 or low design df.
+Evaluate complements separately. Apply these standards to descriptive proportions,
+not directly to regression PR. Retain old primary logit intervals; the new table
+identifies the additional Korn-Graubard intervals and precision assessment.
+
+4. Full loneliness distribution and ordinal-model assessment
+Report five survey-weighted LONELY_A categories by swallowing status using all
+valid exposure/outcome responses. On the common complete-case sample, fit four
+survey-logistic cumulative dichotomizations (>=rarely, >=sometimes, >=usually,
+always) with all M3 covariates. Jointly estimate coefficient covariance across
+thresholds using survey::svyglm influence functions and survey::svyrecvar.
+Compare each of the three other threshold-specific slopes with the primary
+>=usually slope for all 23 non-intercept coefficients, pooling contrasts over
+ten imputations. A Bonferroni familywise 0.05 threshold across the 69 slope
+contrasts is a conservative diagnostic of proportional-odds adequacy. Report
+the exposure-specific threshold estimates and diagnostics. Fit a common
+survey-proportional-odds model only if no adjusted diagnostic rejects and model
+fits are stable. Otherwise retain threshold-specific results and document why a
+single ordinal OR is not supported. Failure to reject is not proof of adequacy.
+
+Sources
+https://r-survey.r-forge.r-project.org/pkgdown/docs/reference/svypredmeans.html
+https://r-survey.r-forge.r-project.org/pkgdown/docs/reference/svyolr.html
+https://www.cdc.gov/nchs/media/pdfs/2024/09/sr02_175.pdf
+Original NHIS documentation and analysis plan remain applicable. All new code,
+tables, diagnostics and limitations are saved separately from primary results.

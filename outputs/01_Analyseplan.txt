@@ -1,0 +1,48 @@
+NHIS 2025 – Projekt 2: Schluckbeschwerden und Einsamkeit ab 65 Jahren
+Analyseplan Version 1, 06.11.2026. Vor Berechnung eigener Kreuztabellen und inferenzieller Ergebnisse festgelegt. Keine externe Präregistrierung. Codebook-Häufigkeiten aller Erwachsenen waren bei der Planung sichtbar.
+
+Fragestellung und Design
+Retrospektive Sekundäranalyse einer Querschnittserhebung der nichtinstitutionalisierten US-Zivilbevölkerung. Assoziation selbstberichteter Schluckbeschwerden in den letzten 12 Monaten mit häufiger Einsamkeit, unter zusätzlicher Adjustierung für gemessene Kontaktfrequenzen. Keine klinisch bestätigte Dysphagie und keine kausale Interpretation.
+
+Population
+Sample Adult 2025; AGEP_A 65–85 (85 = 85+). Bei unbekanntem numerischen Alter kann AGE65=2 die Zugehörigkeit für deskriptive Tabellen bestätigen; diese Personen werden für altersadjustierte Modelle ausgeschlossen und gesondert gezählt. AGEP_A hat Vorrang vor AGE65.
+
+Exposition und Endpunkt
+Primär: VSLSWYR_A=1 versus 2 (Schluckbeschwerden ja/nein).
+Primärer Endpunkt: LONELY_A 1/2 (immer/meistens) versus 3/4/5 (manchmal/selten/nie). Dies ist eine analytische Dichotomisierung eines Einzelitems, keine validierte klinische Schwelle.
+Sekundäre Schwere: keine Beschwerden (VSLSWYR_A=2), wenig (VSLSWDIF_A=1), mittel (3), stark (2). Strukturell leere Schwere bei verneinten Beschwerden ist kein Item-Nonresponse. Bei fehlender Exposition wird sie niemals zu "keine" umkodiert. Kein linearer Trend über die Originalcodes.
+
+Modelle
+Surveygewichtete Poisson-Regression mit Log-Link und designbasierter Sandwich-Varianz (quasipoisson), Ergebnis Prävalenzverhältnis (PR), 95%-KI. Keine naive ungewichtete Regression. Hauptvergleich binäre Exposition im Modell M3.
+M0: nur Exposition.
+M1: zusätzlich Altersgruppen 65–74, 75–84, 85+ sowie SEX_A (1/2).
+M2: zusätzlich Bildung (EDUCP_A 1–2, 3–4, 5–7, 8–10), Familienarmutsquotient (<1, 1–<2, 2–<4, >=4), Partnerschaft (MARITAL_A 1/2 versus 3), Alleinleben (PCNT18UPTC=1 und PCNTLT18TC=0), Mobilität (DIFF_A 1, 2, 3/4), Hören (HEARINGDF_A 1, 2, 3/4), Schlaganfallanamnese (STREV_A 1/2).
+M3: zusätzlich SCONNECT1_A und SCONNECT2_A jeweils vier Kategorien 0–3 als Faktoren. Diese betreffen Kontakte außerhalb des Haushalts pro typischer Woche.
+M4 (erweiterte Sensitivität): M3 plus SCONNECT3_A und SCONNECT4_A jeweils vier Kategorien 0–3 als Faktoren (Teilnahme im vergangenen Jahr). Kein Summenscore aus unterschiedlichen Zeitskalen.
+Primäre Modellfolge M0–M4 auf derselben vollständigen Stichprobe für M4, damit Veränderungen nicht durch wechselnde Zusammensetzung entstehen. Ergänzend M3 auf allen für M3 vollständigen Fällen.
+
+Einkommen
+Die Hauptdatei enthält nur die erste Einkommensimputation. Für alle einkommensadjustierten Modelle werden deshalb die zehn offiziellen Imputationen aus adultinc25.csv anhand HHX und IMPNUM_A eingebunden, jedes Modell je Imputation mit Survey-Design geschätzt und mit Rubin-Regeln (mitools::MIcombine, endliche vollständige Freiheitsgrade) kombiniert. Keine Stapelung als zehnfach unabhängige Stichprobe. Sonstige fehlende Werte werden nicht imputiert.
+
+Design und fehlende Angaben
+WTFA_A, PSTRAT, PPSU; survey::svydesign(nest=TRUE) zunächst auf der gesamten Erwachsenendatei, dann Domain-Subset. Taylor-Linearisierung. Design-Freiheitsgrade und Zahl der PSUs/Strata berichten. Einzel-PSU-Strata zunächst als Fehler behandeln, nicht stillschweigend entfernen. 7/8/9 bzw. 97/98/99 nur gemäß jeweiligem Codebook als fehlend behandeln. Für Schwere strukturelle Skips, fehlende Exposition und fehlende Antworten unter Berechtigten trennen. Ungewichtete Fallzahlen und rohe Kategorienhäufigkeiten sowie Missing-Anteile unter >=65 ausgeben. Gewichte ersetzen keine Korrektur für Item-Nonresponse.
+
+Machbarkeits- und Stabilitätsprüfung
+Vor Regression: Kreuztabellen Exposition/Schwere × Endpunkt, Exposition × Kontaktkategorie × Endpunkt, Anzahl vollständiger Fälle, Ereignisse und Nicht-Ereignisse nach Exposition, PSU/Strata-Abdeckung. Hauptmodell nur bei mindestens 20 Ereignissen und 20 Nicht-Ereignissen in jeder Expositionsgruppe und insgesamt mindestens 10 Ereignissen je geschätztem Nicht-Intercept-Parameter; dies sind pragmatische Screeningregeln, keine Validitätsgarantie. Keine Kategorienzusammenlegung nach p-Werten. Bei unzureichender Besetzung nur deskriptive Auswertung und dokumentierte Planänderung vor weiterer Inferenz.
+
+Sensitivitätsanalysen
+1. M3 plus DEPFREQ_A, täglich/wöchentlich versus monatlich/seltener/nie; M3 auf exakt denselben Fällen als Vergleich. Depression kann Konfounder, Folge oder vermittelnde Variable sein; kein kausaler Mediationseffekt oder "vermittelter Anteil".
+2. Breiter Endpunkt LONELY_A 1/2/3 versus 4/5.
+3. M3 ohne Proxy-Interviews (PROXYFLAG_A=2).
+4. Schwerekategorien im M3-Modell, nur bei >=20 Ereignissen und >=20 Nicht-Ereignissen pro Schwerekategorie; sonst deskriptiv.
+5. Survey-logistische M3-Regression als Modell-Sensitivität, als Odds Ratio ausdrücklich vom PR unterscheiden.
+Keine explorativen Interaktionstests als konfirmatorische Ergebnisse. Sensitivitäten ohne Multiplikitätskorrektur, ausdrücklich ergänzend.
+
+Grenzen und Berichterstattung
+Unterschiedliche Bezugszeiträume, Selbstbericht, Restkonfounding, mögliche umgekehrte Richtung, Selektivität durch fehlende Angaben und Nichtteilnahme, topkodiertes Alter, Ausschluss institutionalisierter Personen. Kontaktfrequenz misst weder Beziehungsqualität noch alle Kontakte. Unterstützung (SUPPORT_A) deskriptiv, nicht im Hauptmodell, da konzeptionelle Nähe zur Einsamkeit und mögliche Vermittlung. Tabellen mit kleinen Zellen nicht als belastbare Populationsschätzungen interpretieren. Keine Aussage "Dysphagie verursacht Einsamkeit". Präzision und Unsicherheit stehen vor statistischer Signifikanz.
+
+Offizielle Quellen
+https://www.cdc.gov/nchs/nhis/documentation/2025-nhis.html
+https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2025/adult-codebook.pdf (29.07.2026)
+https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2025/srvydesc-508.pdf (August 2026), insbesondere S. 49 und 72–74.
+https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2025/NHIS2025-imputation-techdoc-508.pdf (Mai 2026).

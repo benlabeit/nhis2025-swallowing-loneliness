@@ -1,0 +1,8 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+PASS: repeated numerical results agree at tolerance 1e-12.
+PASS: 12 models with 10 imputations each and finite covariance matrices.
+PASS: report includes main result and all ten sections.
