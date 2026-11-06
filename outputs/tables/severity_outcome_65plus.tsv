@@ -1,0 +1,16 @@
+severity	lonely	Freq
+none	0	7190
+little	0	335
+middle	0	174
+a_lot	0	93
+NA	0	12
+none	1	355
+little	1	34
+middle	1	27
+a_lot	1	22
+NA	1	0
+none	NA	10
+little	NA	1
+middle	NA	1
+a_lot	NA	1
+NA	NA	237

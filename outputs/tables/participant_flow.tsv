@@ -1,0 +1,11 @@
+stage	n
+all_adults	24215
+age_numeric_65plus	8468
+age65_fallback	24
+all_confirmed_65plus	8492
+valid_exposure_and_outcome	8231
+complete_M3	8119
+complete_M4_common	8094
+complete_depression	8055
+complete_self_report	7829
+complete_severity	8093

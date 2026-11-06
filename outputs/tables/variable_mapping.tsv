@@ -1,0 +1,27 @@
+Variable	Verwendung	Codebook_Seite
+VSLSWYR_A	1 ja, 2 nein; 7/8/9 fehlend	489
+VSLSWDIF_A	Nur VSLSWYR_A=1: 1 wenig, 3 mittel, 2 stark; strukturelle Skips getrennt	491
+LONELY_A	1/2 häufig, 3/4/5 nicht häufig; Sensitivität 1/2/3 versus 4/5	478
+SUPPORT_A	1 immer, 2 meistens, 3 manchmal, 4 selten, 5 nie; nur deskriptiv	477
+SCONNECT1_A	Treffen außerhalb Haushalt pro Woche: 0 <1, 1=1–2, 2=3–4, 3 >=5	479
+SCONNECT2_A	Telefon/Video außerhalb Haushalt pro Woche: gleiche Codes wie SCONNECT1	480
+SCONNECT3_A	Gottesdienste/Jahr: 0=0, 1=1–3, 2=4–11, 3 >=12	481
+SCONNECT4_A	Vereinstreffen/Jahr: 0=0/keine Mitgliedschaft, 1=1–3, 2=4–11, 3 >=12	482
+AGEP_A	65–74, 75–84, 85+; 97/98/99 fehlend	21
+AGE65	Nur bei unbekanntem numerischen Alter: 2 bestätigt >=65; kein Ersatz für genaue Altersgruppe	20
+SEX_A	1 männlich, 2 weiblich; 7/8/9 fehlend	19
+EDUCP_A	1–2 unter Highschool; 3–4 Highschool/GED; 5–7 College/Associate; 8–10 Bachelor+	26
+POVRATTC_A	<1, 1–<2, 2–<4, >=4; alle zehn offiziellen Imputationen	566
+IMPNUM_A	1–10; getrennte Analysen, anschließend Rubin-Pooling	565
+IMPINCFLG_A	0 berichtet; 1/2 imputiert; nicht als beobachtet ausgeben	568
+MARITAL_A	1/2 verheiratet oder zusammenlebend, 3 weder noch	504
+PCNT18UPTC	Zusammen mit PCNTLT18TC: allein, wenn 1 Erwachsener und 0 Kinder	17
+PCNTLT18TC	0 Kinder für Definition des Alleinlebens	18
+DIFF_A	1 keine, 2 etwas, 3/4 starke/volle Mobilitätseinschränkung	160
+HEARINGDF_A	1 keine, 2 etwas, 3/4 starke/volle Hörschwierigkeit	159
+STREV_A	1 jemals Schlaganfall mitgeteilt, 2 nein	44
+DEPFREQ_A	1/2 täglich/wöchentlich, 3/4/5 seltener/nie; Sensitivität	412
+PROXYFLAG_A	1 Proxy, 2 kein Proxy	12
+WTFA_A	Finales jährliches Erwachsenengewicht	4
+PSTRAT	Public-use Varianzstratum	7
+PPSU	Public-use PSU, innerhalb Stratum verschachtelt	8

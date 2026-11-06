@@ -1,0 +1,5 @@
+check	n
+severity_blank_exposure_no	7555
+severity_blank_exposure_unknown	248
+severity_invalid_among_exposed	1
+severity_recorded_without_yes	0
