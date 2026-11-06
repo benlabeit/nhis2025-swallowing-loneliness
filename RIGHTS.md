@@ -17,3 +17,8 @@ Bibliographic records and source links document the literature search. The
 repository should not contain publisher full texts unless redistribution is
 permitted; a linked or locally managed Zotero attachment is not automatically
 permission to redistribute the article.
+
+The included NLM/Vancouver citation-sequence CSL style retains its original
+author attribution and Creative Commons Attribution-ShareAlike 3.0 license.
+That license applies to the CSL style, not automatically to this project's
+manuscript or original analyses.

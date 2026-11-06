@@ -8,6 +8,21 @@ after adjustment for measured social contact frequency.
 The study is cross-sectional. Swallowing problems are self-reported and are not
 clinically confirmed dysphagia. Estimates describe associations, not causal effects.
 
+## Start with the complete archive
+
+Download `NHIS2025_Complete_Project.zip` and extract it before running the project.
+The archive contains the complete folder tree, original data, analysis code,
+results, literature records, HTML manuscript, actual Zotero citation data and figure files. The
+expanded files displayed at the top level of the GitHub repository are a selected
+convenience view; they are not a substitute for extracting the complete archive.
+
+Open `outputs/NHIS2025_Manuscript_EN.html` as the primary manuscript deliverable.
+Its content and Zotero-rendered references have been reviewed. The editable Word
+version is withheld from the archive until Word layout review can be completed;
+it will be added after that check. Read `VALIDATION_STATUS.txt` inside the archive
+for the current Word-layout and Zotero-refresh status. HTML review does not
+constitute a Word application-level Refresh or pagination test.
+
 ## Project contents
 
 - `outputs/01_Analyseplan.txt`: the original analysis plan, saved before the original cross-tabulations and regression models.
@@ -17,15 +32,20 @@ clinically confirmed dysphagia. Estimates describe associations, not causal effe
 - `outputs/tables/` and `outputs/extended_tables/`: machine-readable results.
 - `outputs/figures_en/`: English PNG, SVG and PDF figures, captions and source inputs.
 - `outputs/08_Figures_EN.R`: reproducible English figure generator.
+- `outputs/12_Extended_Figures_EN.R`: supplementary English figure generator.
 - `outputs/literature/`: verified reference metadata and search documentation.
-- `outputs/source_data/`: convenient user-facing copies of the downloaded public-use data.
-- `work/raw/`: canonical raw CSV files and original CDC ZIP archives used by the analysis scripts.
+- `outputs/source_data/`: canonical, unchanged downloaded public-use CSV files and CDC ZIP archives.
+- `outputs/NHIS2025_Manuscript_EN.html`: primary English manuscript, with references rendered by Zotero.
+- `outputs/NHIS2025_Manuscript_EN.docx`: added only after Word layout review; not included while that review is pending.
+- `outputs/manuscript_sources/`: manuscript content, builder and Zotero project script.
+- `work/raw/`: created by `RunAll.ps1` from the canonical source files when needed; omitted from the archive to avoid duplicated data.
 - `work/docs/`: official CDC codebook and methodological documents.
-- `FILE_MANIFEST.tsv`: SHA-256 checksums for copied analysis artifacts.
+- `FILE_MANIFEST.tsv`: SHA-256 checksums for every archived file other than the manifest itself.
 
-Final manuscript files are added to `outputs/` when the statistical and citation
-checks are complete. Their filenames and status should be checked there; this
-README does not imply that a draft has been submitted or peer reviewed.
+The original German report covers the first analysis stage. Consult
+`outputs/11_Extended_Results.txt` and `outputs/extended_tables/` for the subsequent
+analyses. Some original plans and audit material remain in German to preserve
+the analysis record. No draft has been submitted or peer reviewed.
 
 ## Data provenance
 
@@ -42,11 +62,10 @@ Original files:
 | `srvydesc-508.pdf` | Survey design and analytic guidance |
 | `income-techdoc.pdf` | Official income-imputation methods |
 
-Raw files are unchanged. The source CSV copies in `outputs/source_data/` and
-`work/raw/` contain the same bytes; the duplicated paths preserve the original
-reproduction scripts while making the source tables easy to locate. The original
-download script checks archive/document hashes and stops if CDC replaces a file
-with another version.
+Raw files are unchanged and stored once in `outputs/source_data/`. `RunAll.ps1`
+copies missing raw files into `work/raw/`, preserving the paths expected by the
+original reproduction scripts. The original download script then checks
+archive/document hashes and stops if CDC replaces a file with another version.
 
 ## Reproduce on Windows
 
@@ -61,10 +80,12 @@ From the repository root:
 ./RunAll.ps1 -Rscript 'C:/Program Files/R/R-4.6.0/bin/Rscript.exe'
 ```
 
-This verifies/downloads official files, installs required R packages locally under
-`work/R-library/`, runs the original analysis and report, then the supplementary
-analysis and English figure generator. It recreates `work/prepared.rds` before
-the supplementary script reads it. Run from the repository root, since the
+This first copies any missing original data from `outputs/source_data/` to
+`work/raw/`. It verifies/downloads official files, installs required R packages
+locally under `work/R-library/`, runs the original analysis and report, then the
+supplementary analysis and both English figure generators (`08_Figures_EN.R` and
+`12_Extended_Figures_EN.R`). It recreates `work/prepared.rds` before the
+supplementary script reads it. Run from the extracted project root, since the
 original scripts intentionally use relative `outputs/` and `work/` paths.
 
 For another operating system, provide the same source files under `work/raw/`
@@ -75,12 +96,24 @@ Rscript outputs/02_Analyse.R
 Rscript outputs/10_Extended_Analysis.R
 Rscript -e "source('outputs/05_Bericht.R', encoding='UTF-8')"
 Rscript -e "source('outputs/08_Figures_EN.R', encoding='UTF-8')"
+Rscript outputs/12_Extended_Figures_EN.R
 ```
 
 Figure scripts read saved results; they do not refit models. The figure captions
 explain their denominators and distinguish prevalence ratios from odds ratios.
 Local package caches, application credentials, temporary renderings and binary
 intermediate analysis objects are not tracked.
+
+To build a local editable Word manuscript from the included Zotero export, install `python-docx`
+and run `python outputs/manuscript_sources/build_manuscript.py` from the extracted
+project root. The builder checks real item keys/URIs and citation sequence. It
+does not perform Word/Zotero Refresh or visual pagination review. Any newly
+generated Word file still requires those checks before delivery. See
+`outputs/literature/Zotero_README.txt` for citation provenance and
+`outputs/Manuscript_submission_notes.txt` for author-supplied submission details.
+The Zotero developer script contains the original local project path; update
+that path for another installation before running it inside Zotero. It is not
+needed to use the included citation export and rebuild the manuscript.
 
 ## Statistical principles
 
