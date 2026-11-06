@@ -1,0 +1,47 @@
+DYSPHAGIA SUBMISSION PREPARATION NOTES
+Official guidance checked 6 November 2026. No submission or acceptance is claimed.
+
+A. Journal instructions
+https://link.springer.com/journal/455/submission-guidelines
+
+Research: introduction, methods, results, discussion/conclusion.
+Abstract: 250 words; structure unspecified; define abbreviations; no unspecified references. Keywords: 4–6.
+Unspecified: research word/reference/table/figure caps, line numbering, spacing.
+Word/DOCX; plain font (10-point Times Roman is an example); automatic pagination; maximum three heading levels; no field functions.
+Double-anonymous. Legacy separate-title-page instructions conflict with the newer portal-transition notice.
+Prepare: names, affiliations/addresses, corresponding email/telephone/fax, acknowledgements, funding, conflicts, contributions, applicable ethics/consent, data/materials/code availability. Data-availability statement required.
+References: appearance-order numbering; square brackets; abbreviated journals; full DOI URLs; all authors preferred, et al. accepted.
+Tables: editable Word tables, sequential Arabic numbers, descriptive captions; notes beneath.
+Figures: electronic, normally within text; sequential numbering; specify software; EPS preferred for vectors, TIFF for halftones; embedded fonts. Minimum dpi: line art 1200, halftone 300, combination 600. Lines ≥0.1 mm; lettering approximately 8–12 pt; RGB color. No embedded titles/captions. Captions in manuscript: bold Fig. plus number, no terminal punctuation. Filenames: Fig1.eps etc.
+Sizes: large-journal widths 84/174 mm, height ≤234 mm; small-journal width 119 mm, height ≤195 mm; journal category unstated.
+Supplement: Online Resource citations; sequential ESM filenames; PDF text, CSV/XLSX spreadsheets.
+
+B. Newer submission-system instruction
+https://www.springernature.com/gp/snapp/submitting/how-to-submit/double-anonymous
+
+Anonymize reviewer files, metadata and repositories. Submit acknowledgements, contributions, conflicts, ethics and funding through SNAPP, outside the manuscript.
+
+C. Official CSL implementation
+https://github.com/citation-style-language/styles/blob/master/dependent/dysphagia.csl
+https://raw.githubusercontent.com/citation-style-language/styles/master/springer-vancouver-brackets.csl
+
+Dysphagia style ID: http://www.zotero.org/styles/dysphagia
+Independent parent: http://www.zotero.org/styles/springer-vancouver-brackets
+Primary repository fetch verified the dependent style (blob SHA c9f1f2b24372e1b68b559e561ad1be28924f6192). Parent source specifies bracketed numeric citations, citation order, DOI links and six authors before et al. when seven or more authors exist. Current parent updated 2025-09-14; dependent alias dated 2014-05-15. This is the real named journal style, not a manually relabeled NLM export.
+
+
+FILE ROLES
+Master: NHIS2025_Dysphagia_Master.docx retains editable Zotero citations.
+Anonymous: NHIS2025_Dysphagia_Anonymous.docx is a separate reviewer copy.
+Author information: NHIS2025_Dysphagia_Author_Information.docx remains separate from reviewer files.
+Online Resource 1: ESM1.pdf, supplementary figures.
+Online Resource 2: ESM2.xlsx, supplementary tables and analysis records.
+Main artwork: figures/Fig1-Fig3; supplementary artwork: figures/ESM1_Fig1-ESM1_Fig3.
+
+OUTSTANDING AUTHOR INPUT
+Anel Karisik competing-interest declaration; study-specific contributions and any equal-contribution designation; local ethics determination and consent requirements for this secondary analysis. ORCID, corresponding-author telephone/fax details and acknowledgements are also not supplied. No absent-conflict, institutional approval/exemption/waiver or contribution statement has been inferred.
+
+VERSION AND INTERPRETATION NOTES
+The current portal-transition instruction and older separate-title-page language conflict. Use the newer SNAPP route and the actual submission fields. Preserve the Zotero-enabled master; use the separate field-free anonymous copy for reviewer preparation. The named journal CSL uses Springer Vancouver, whereas some legacy reference examples resemble Springer Basic; this discrepancy is recorded, not concealed. An unstructured abstract is a formatting choice, not an explicit instruction. The generic figure-size guidance does not identify the journal size class. Continuous line numbering and double spacing were not explicit requirements on the inspected page.
+
+Final journal-version Word/Zotero refresh and pagination checks are recorded separately from the earlier general manuscript. Consult VALIDATION_STATUS.txt in the final complete archive. Rebuilding or exporting files alone is not proof of those application checks.

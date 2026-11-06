@@ -1,0 +1,28 @@
+DYSPHAGIA MANUSCRIPT PACKAGE: FINAL VALIDATION RECORD
+6 November 2026
+
+Validated final files
+- NHIS2025_Dysphagia_Master.docx: 452,035 bytes.
+  SHA-256: 5686b0739c319a605a38798eedd69d5c27aeeb1c4525d3378a5dfbf6613f593a
+- NHIS2025_Dysphagia_Anonymous.docx: 345,078 bytes.
+  SHA-256: 2d30868f8d58809ff8ff0d62442a61b413b9bfd98ebae6614ea78b79a48d63a6
+- NHIS2025_Dysphagia_Author_Information.docx: 36,164 bytes.
+  SHA-256: 6cc07af1dd422e3bb0b3d83e3cb2e4786286a5c49e20bc1bb62193baa0bdcda0
+
+Zotero and native Word verification
+The authoring master uses real Zotero records and the Dysphagia citation style (http://www.zotero.org/styles/dysphagia). Native Microsoft Word/Zotero Refresh and Save were completed successfully before final export. Independent checks of the saved master confirm 29 editable citation clusters, one bibliography field, 26 references, three editable tables and three main figures. The anonymous DOCX was regenerated from the native-refreshed field caches and retains the same 29 rendered citation-cluster texts and 26 references as plain text. Its three tables match the master cell for cell. It has no Zotero citation/bibliography fields; automatic PAGE fields are retained for pagination.
+
+Rendering and visual verification
+The canonical render_docx.py workflow was attempted but failed in the available environment; it did not provide a successful render. The actual fallback used native Microsoft Word PDF export followed by Poppler rendering at 120 dpi. All rendered pages were inspected: master 18 pages, anonymous manuscript 16 pages, author-information document 2 pages. The coordinating/statistical reviewers reviewed the master, the literature reviewer reviewed every anonymous page at full image resolution, and the coordinating reviewer reviewed both author-information pages. These completed reviews found readable text, references, tables and figures without identified clipping, overflow or missing material. Primary sample sizes, prevalence ratios and absolute estimates were retained.
+
+Anonymity and internal review artifacts
+The delivered anonymous DOCX has empty creator and lastModifiedBy properties and no visible author names or author-identifying repository links. Word exported the internal reviewer QA PDF with a local account name in its Author metadata. That PDF is NOT an anonymous deliverable and is not supplied. All native QA PDFs and page PNGs remain under work/, outside the deliverable folder and download archives. The master and separate author-information document intentionally contain authorship information. The full Dysphagia package is therefore a convenient author package, not an anonymous submission packet.
+
+Supplementary files and artwork
+ESM1.pdf contains three captioned supplementary figures (S1-S3), consistent with the manuscript cross-references. All six journal artworks were visually reviewed as PNGs and as PDFs rendered at 120 dpi; the final files passed size, font-embedding and clipping/overlap checks. EPS, PDF, PNG and RGB TIFF formats are supplied. TIFF resolution is 600 dpi; nominal artwork dimensions are 174 x 110 mm. Statistical models were not refitted for journal formatting.
+ESM1.pdf SHA-256: 92d7dc7fe89baae6cccc32c68b7255392f9f2b0e7f2d31e62b02b0d42b271b8c
+ESM2.xlsx contains 25 worksheets: an index plus all 17 extended TSV tables, two extended text records and five additional original tables. All 7,222 source cells were checked, including exact comparison of 5,085 numeric cells; no formulas or synthetic estimates were introduced. Original source files remained unchanged. All 25 sheet previews were visually reviewed. Creator/last-modified/custom identifying metadata and author, repository and user-local-path identifiers were checked and are absent from the reviewer workbook.
+ESM2.xlsx SHA-256: 6351e52744404ea27af3684ef425a3cff8ced92426c034a1c6c94da2f495cfd8
+
+Scope and remaining author decisions
+These checks apply to the file hashes above. Substantive edits or regeneration require renewed native Word/Zotero and visual checks. Anel Karisik competing interests, study-specific author contributions, and the applicable local ethics/consent determination remain to be supplied or confirmed. Other open details are listed in the separate author-information document. No conflict declaration, contribution or local institutional exemption was invented. This validation is not author approval, journal submission, acceptance or peer review.
