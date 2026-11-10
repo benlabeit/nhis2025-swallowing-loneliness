@@ -16,7 +16,7 @@ work/figures_en_qa/
 work/integrations/
 work/repository/
 
-# Redundant downloadable bundles; source CDC ZIP files remain tracked
+# Redundant downloadable bundles
 outputs/*.zip
 
 # Local secrets and editor/system files
@@ -28,3 +28,9 @@ outputs/*.zip
 Thumbs.db
 desktop.ini
 ~$*
+
+# Downloaded respondent data (retain source notes and checksums)
+/work/raw/
+/outputs/source_data/*.csv
+!/outputs/source_data/SHA256.csv
+/outputs/source_data/*.zip

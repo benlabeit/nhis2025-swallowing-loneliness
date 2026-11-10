@@ -23,7 +23,7 @@ Version auszuwerten. Die CRAN-Paketinstallation ist nicht versionsfixiert;
 für langfristige Reproduktion die Sitzungsdatei und lokale Bibliothek aufbewahren.
 
 Die zwei ursprünglichen Rohdatenarchive und drei offiziellen PDF-Dokumente
-liegen lokal unter work/raw bzw. work/docs. Sie sind nicht im Ergebnis-ZIP
+liegen lokal unter work/raw bzw. work/docs. Sie sind weder im Ergebnis-ZIP noch im aktuellen Komplettarchiv
 enthalten; der Startcode lädt sie aus offiziellen CDC-Quellen erneut herunter.
 work/prepared.rds enthält aufbereitete Individualdaten; work/models.rds enthält
 kompakte Modellparameter und Kovarianzen für alle zehn Imputationen.
@@ -41,3 +41,8 @@ Qualitätsprüfung
 Ergebnisse sind Assoziationen aus einer Querschnittserhebung, keine klinisch
 bestätigten Dysphagiebefunde und kein Kausalnachweis. Literaturprüfung und
 Publikationsplanung sind nicht Gegenstand dieses Analysepakets.
+
+Gesamtprojekt: RunAll.ps1 im entpackten Komplettarchiv startet auch die
+Erweiterungsanalysen und englischen Abbildungen. Es ist keine lokale
+Originaldatenkopie aus outputs/source_data erforderlich. Fruehere Git-Versionen
+enthalten noch die damaligen Datenarchive; die Historie bleibt unveraendert.

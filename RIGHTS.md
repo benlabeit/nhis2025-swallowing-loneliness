@@ -22,3 +22,14 @@ The included NLM/Vancouver citation-sequence CSL style retains its original
 author attribution and Creative Commons Attribution-ShareAlike 3.0 license.
 That license applies to the CSL style, not automatically to this project's
 manuscript or original analyses.
+
+## Data access
+
+The current complete project archive excludes original respondent CSVs and ZIPs.
+The launcher downloads them directly from the CDC and checks recorded SHA-256
+hashes. Earlier Git revisions retain the original bundles.
+
+The NCHS Data User Agreement applies:
+https://www.cdc.gov/nchs/policy/data-user-agreement.html
+Use data only for statistical reporting and analysis; do not attempt identification
+or link to individually identifiable records.

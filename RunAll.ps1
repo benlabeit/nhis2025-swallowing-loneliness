@@ -2,17 +2,7 @@ param([string]$Rscript = 'C:/Program Files/R/R-4.6.0/bin/Rscript.exe')
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 if (!(Test-Path -LiteralPath $Rscript)) { throw 'Rscript executable not found; supply its path using -Rscript.' }
-# The complete archive stores original data once under outputs/source_data.
-# Restore the canonical paths expected by the original scripts before validation.
-New-Item -ItemType Directory -Force work/raw | Out-Null
-foreach ($name in @('adult25.csv','adult25csv.zip','adultinc25.csv','adultinc25csv.zip')) {
-    $rawTarget = Join-Path 'work/raw' $name
-    $rawSource = Join-Path 'outputs/source_data' $name
-    if (!(Test-Path -LiteralPath $rawTarget)) {
-        if (!(Test-Path -LiteralPath $rawSource)) { throw "Missing original data file: $rawSource. Extract the complete project archive first." }
-        Copy-Item -LiteralPath $rawSource -Destination $rawTarget
-    }
-}
+# Download and verify official CDC sources before running analyses.
 & ./outputs/04_Download_und_Start.ps1 -Rscript $Rscript
 if ($LASTEXITCODE -ne 0) { throw 'Original analysis failed.' }
 & $Rscript outputs/10_Extended_Analysis.R
