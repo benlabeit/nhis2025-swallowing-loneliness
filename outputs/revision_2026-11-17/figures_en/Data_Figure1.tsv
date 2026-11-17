@@ -1,0 +1,3 @@
+group	variable	n_valid	n_events	prevalence	lower	upper
+no_swallowing_problem	lonely	7321	340	0.040220073590872	0.0354898102490396	0.0455510351590736
+swallowing_problem	lonely	638	79	0.108061331234733	0.0843861474271671	0.137382141342604

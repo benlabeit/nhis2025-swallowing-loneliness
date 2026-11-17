@@ -1,6 +1,11 @@
 # Local package/runtime caches
 work/R-library/
 node_modules/
+/node_modules
+/work/revision_2026-11-17/
+/outputs/revision_2026-11-17/*.inspect.ndjson
+# Reviewer manuscript is delivered separately; do not publish existing reviewer comments.
+/outputs/revision_2026-11-17/*Tracked.docx
 __pycache__/
 *.pyc
 .Rhistory

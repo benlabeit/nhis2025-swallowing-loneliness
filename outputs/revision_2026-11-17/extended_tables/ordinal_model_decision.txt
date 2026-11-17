@@ -1,0 +1,1 @@
+Proportional odds not supported: 2 of 69 slope contrasts reject after Bonferroni adjustment. No common ordinal OR fitted.

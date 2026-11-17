@@ -4,6 +4,8 @@ Reproducible secondary analysis of NHIS 2025 public-use data among adults aged 6
 
 ## Manuscript and figures
 
+The [17 November 2026 JAGS analysis revision](outputs/revision_2026-11-17/README.md) uses self-reports as the primary sample and adds cognitive, sensory and comorbidity sensitivities, with regenerated tables and figures. The older packages below retain the previous analysis and are not the outputs for that revision.
+
 - [Dysphagia authoring master](outputs/dysphagia/NHIS2025_Dysphagia_Master.docx), with live Zotero citation fields.
 - [Anonymous reviewer manuscript](outputs/dysphagia/NHIS2025_Dysphagia_Anonymous.docx) and [separate author information](outputs/dysphagia/NHIS2025_Dysphagia_Author_Information.docx).
 - [Journal figures](outputs/dysphagia/figures/), [supplementary figures](outputs/dysphagia/ESM1.pdf) and [supplementary tables](outputs/dysphagia/ESM2.xlsx).
