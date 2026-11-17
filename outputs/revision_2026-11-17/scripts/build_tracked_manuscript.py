@@ -49,13 +49,27 @@ def replace_span(p,start,end,new):
         assert len(r.findall(W+'t'))==1
         props=r.find(W+'rPr');s=t.text or '';lo=max(0,start-a);hi=min(len(s),end-a)
         parent=r.getparent();idx=parent.index(r);pieces=[]
+        # Keep breaks/tabs and field markers at their original position around text.
+        children=list(r);ti=children.index(t)
+        for side in [children[:ti]]:
+            extra=[x for x in side if x.tag!=W+'rPr']
+            if extra:
+                before=E.Element(W+'r')
+                if props is not None:before.append(copy.deepcopy(props))
+                for x in extra:before.append(copy.deepcopy(x))
+                pieces.append(before)
         if s[:lo]:pieces.append(run(s[:lo],props))
         if hi>lo:pieces.append(rev('del',s[lo:hi],props))
         if first and new:pieces.append(rev('ins',new,props))
         if s[hi:]:pieces.append(run(s[hi:],props))
+        extra=[x for x in children[ti+1:] if x.tag!=W+'rPr']
+        if extra:
+            afterrun=E.Element(W+'r')
+            if props is not None:afterrun.append(copy.deepcopy(props))
+            for x in extra:afterrun.append(copy.deepcopy(x))
+            pieces.append(afterrun)
         for q in pieces:parent.insert(idx,q);idx+=1
-        r.remove(t)
-        if all(c.tag==W+'rPr' for c in r):parent.remove(r)
+        parent.remove(r)
         first=False
 def change(p,new):
     old=tx(p)
@@ -91,7 +105,10 @@ def append_para(after,text):
     if rp is None:rp=E.SubElement(pr,W+'rPr')
     global revision
     E.SubElement(rp,W+'ins',{W+'id':str(revision),W+'author':'Cinja',W+'date':DATE});revision+=1
-    props=after.find('.//'+W+'rPr');p.append(rev('ins',text,props))
+    # Inherit ordinary paragraph text, never a superscript citation run.
+    text_runs=after.xpath('./w:r[w:t]',namespaces=NS)
+    props=text_runs[0].find(W+'rPr') if text_runs else None
+    p.append(rev('ins',text,props))
     after.addnext(p);changes.append({'old':'','new':text});return p
 
 setp(20,'Results: Among 7,959 self-respondents with valid exposure and outcome data, weighted frequent loneliness prevalence was 10.8% with swallowing problems and 4.0% without. The common regression sample included 7,829 respondents. The primary adjusted PR was 1.99 (95% confidence interval [CI] 1.55–2.56). Standardized prevalence was 8.4% versus 4.1%, with a difference of 4.3 percentage points (95% CI 2.3–6.2). Adjusted PRs increased across swallowing-difficulty categories. Additional cognitive, sensory, and comorbidity adjustment yielded a PR of 1.68 (1.29–2.17).')
@@ -175,7 +192,11 @@ settings=E.fromstring(parts['word/settings.xml'])
 if settings.find(W+'trackRevisions') is None:E.SubElement(settings,W+'trackRevisions')
 view=settings.find(W+'revisionView')
 if view is None:view=E.SubElement(settings,W+'revisionView')
-view.set(W+'markup','1');view.set(W+'insDel','1')
+view.set(W+'markup','1');view.set(W+'insDel','1');view.set(W+'formatting','1');view.set(W+'comments','1')
+# Put review settings in schema order, before defaultTabStop.
+for el in [view,settings.find(W+'trackRevisions')]:
+    settings.remove(el)
+    settings.insert(list(settings).index(settings.find(W+'defaultTabStop')),el)
 def resolve(r,accept):
     r=copy.deepcopy(r)
     # Remove newly inserted paragraphs entirely in the rejected view.
@@ -206,7 +227,7 @@ def write(path,doc,sett):
             if n=='word/document.xml':b=E.tostring(doc,xml_declaration=True,encoding='UTF-8',standalone=True)
             if n=='word/settings.xml':b=E.tostring(sett,xml_declaration=True,encoding='UTF-8',standalone=True)
             z.writestr(n,b)
-out=BASE/'NHIS2025_JAGS_Manuscript_Cinja_Tracked.docx';write(out,root,settings)
+out=BASE/'NHIS2025_JAGS_Manuscript_Cinja_Korrigiert_Tracked.docx';write(out,root,settings)
 qa=Path('work/revision_2026-11-17');qa.mkdir(parents=True,exist_ok=True)
 write(qa/'manuscript_accepted_QA.docx',accepted,settings)
 (qa/'manuscript_accepted.txt').write_text('\n'.join(flat(accepted)))
