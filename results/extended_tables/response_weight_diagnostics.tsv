@@ -1,0 +1,17 @@
+statistic	value
+eligible_n	8180
+unknown_numeric_age_excluded	24
+included_n	7636
+weighted_response_fraction	0.932572632705861
+propensity_min	0.827252904871652
+propensity_max	0.952505511167805
+multiplier_min	0.979073214560717
+multiplier_p01	0.979073214560717
+multiplier_p50	0.994520398097449
+multiplier_p99	1.07878829657991
+multiplier_max	1.12731261167412
+trimmed_below_n	0
+trimmed_above_n	11
+combined_weight_min	2372.33781061928
+combined_weight_max	44456.0311766795
+kish_effective_n	5742.07510508273
