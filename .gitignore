@@ -1,41 +1,21 @@
-# Local package/runtime caches
-work/R-library/
-node_modules/
-/node_modules
-/work/revision_2026-11-17/
-/outputs/revision_2026-11-17/*.inspect.ndjson
-# Reviewer manuscript is delivered separately; do not publish existing reviewer comments.
-/outputs/revision_2026-11-17/*Tracked.docx
+/work/
 __pycache__/
 *.pyc
+node_modules/
 .Rhistory
 .RData
 .Ruserdata
 .Rproj.user/
-
-# Generated intermediate analysis objects and logs
-work/*.rds
-work/*.log
-work/figures_qa/
-work/figures_en_qa/
-work/integrations/
-work/repository/
-
-# Redundant downloadable bundles
-outputs/*.zip
-
-# Local secrets and editor/system files
 .env
 .env.*
-*credentials*.json
-*token*.json
 .DS_Store
 Thumbs.db
-desktop.ini
 ~$*
 
-# Downloaded respondent data (retain source notes and checksums)
-/work/raw/
-/outputs/source_data/*.csv
-!/outputs/source_data/SHA256.csv
-/outputs/source_data/*.zip
+# Local numerical verification outputs
+/results/validation.txt
+/results/analysis_validation.tsv
+/results/independent_M3_refit.tsv
+/results/independent_margins_check.tsv
+/results/extended_tables/joint_score_validation.tsv
+/results/extended_tables/threshold_covariance_validation.tsv
