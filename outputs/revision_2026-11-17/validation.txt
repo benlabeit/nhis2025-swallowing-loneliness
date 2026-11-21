@@ -3,5 +3,5 @@ Including proxies reproduces the original main model.
 Excluded proxies: 288 age-eligible; 265 in otherwise complete regression sample.
 Independent weighted GLM coefficients and score-based survey covariance agree.
 All expanded models pool ten income imputations and have ordered confidence intervals.
-Expanded sample and exposed/event counts agree with manuscript.
+Cancer coding and expanded sample counts passed independent checks.
 All six primary descriptive proportions and complements pass precision checks.

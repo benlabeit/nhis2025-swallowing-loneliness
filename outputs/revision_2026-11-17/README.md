@@ -1,8 +1,8 @@
 # Self-report primary analysis and expanded adjustment
 
-This revision excludes proxy interviews from the primary descriptive and regression analyses and adds cognitive, sensory and comorbidity adjustment. All estimates use the survey design and all ten official income imputations. Earlier project outputs are retained as the original analysis, not the results for this revision.
+The primary descriptive and regression analyses use interviews answered by the participants themselves. Regression estimates account for the survey design and pool all ten official income imputations.
 
-The primary sample is 7,829 self-respondents (411 frequent-loneliness events), compared with 8,094 when proxies are included. The primary PR is 1.99 (95% CI 1.55–2.56). The expanded complete sample is 7,773 self-respondents; its fully adjusted PR is 1.68 (1.29–2.17). These are cross-sectional associations, not causal effects.
+The primary sample is 7,829 self-respondents (411 frequent-loneliness events), compared with 8,094 when proxies are included. The primary PR is 1.99 (95% CI 1.55–2.56). The expanded complete sample is 7,658 self-respondents; its fully adjusted PR is 1.68 (1.30–2.19). These are cross-sectional associations, not causal effects.
 
 ## Results
 
@@ -37,17 +37,11 @@ The PDF builder requires reportlab and pypdf; the manuscript builder requires lx
 ## Analysis choices
 
 - Primary restriction: `PROXYFLAG_A=2`; the full adult survey design is constructed before domain restriction. Including proxies remains a sensitivity analysis.
-- Age eligibility retains the original AGE65 fallback for descriptive statistics. Exact age is still required for regression. No change was made to the separate BMC study.
+- Age eligibility retains the original AGE65 fallback for descriptive statistics. Exact age is still required for regression.
 - The common primary sample retains complete participation variables so M0–M4 can be compared on identical respondents.
 - The response-propensity analysis is restricted to 8,180 self-respondents with numerical age. Proxy status is constant and is omitted from that response model.
 - Expanded adjustment adds dementia, cognition and communication, then vision, then a custom comorbidity score. Difficulty variables use three categories. The common expanded sample also requires valid comparison exposures.
 - The custom score uses myocardial infarction, COPD/current asthma, broad arthritis and diabetes (one point each), and cancer other than nonmelanoma-only skin cancer (two). Stroke and dementia remain separate. This is not a validated Charlson index; the arthritis item includes noninflammatory disease.
-- Structural skips are handled separately from missing/unknown responses. Other cancer (`OTHERCANP_A`) is included. A second malignancy is retained even when nonmelanoma skin cancer is also present.
+- Structural skips are handled separately from missing/unknown responses. Other cancer (`OTHERCANP_A`) is included. A documented qualifying malignancy contributes two points, including when reported alongside nonmelanoma skin cancer. Nonmelanoma skin cancer alone contributes zero. Skin cancer of unknown type without a documented qualifying malignancy leaves the component missing. Sex-specific cancer indicators are evaluated within their questionnaire universe.
 - Voice, speech and vision replace the exposure in comparison models; vision is removed as a covariate when it is the exposure. These are exploratory comparisons, not negative controls. Communication adjustment can particularly affect speech associations. No formal test of differences between exposure coefficients was performed.
 - Sensitivities omit communication adjustment or arthritis scoring, use the M3-available sample, and add depressive feelings on a matched sample.
-
-The colleague's original exploratory script was not available. These scripts implement explicitly documented definitions rather than claiming exact reproduction of that report's 8,053-person sample. The implemented revision uses self-reports and ten imputations throughout.
-
-## What changed in code
-
-The existing analysis approach is retained. The substantive changes are sample flags, proxy-inclusion sensitivity, the response-model domain, the added adjustment script, and updated figure labels/counts. The two original analysis scripts and figure scripts are retained as versioned copies here to avoid overwriting the previous analysis. A constant-proportion numerical-boundary guard was added to the precision helper because proxy status is now constant.

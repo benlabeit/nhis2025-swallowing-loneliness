@@ -57,8 +57,17 @@ cross(d$older,c('severity','lonely'),'severity_outcome_65plus')
 cross(d$cc4,c('swallow','lonely'),'exposure_outcome_complete')
 cross(d$ccseverity,c('severity','lonely'),'severity_outcome_complete')
 for(j in 1:4) cross(d$cc4,c('swallow',paste0('contact',j),'lonely'),paste0('contact',j,'cells_complete'))
-flow <- data.frame(stage=c('all_adults','age_numeric_65plus','age65_fallback','all_confirmed_65plus','valid_exposure_and_outcome','complete_M3','complete_M4_common','complete_depression','complete_self_report','complete_severity'),n=c(nrow(d),sum(d$age>=65,na.rm=TRUE),sum(d$older & is.na(d$age)),sum(d$older),sum(d$older & complete.cases(d[c('swallow','lonely')])),sum(d$cc3),sum(d$cc4),sum(d$ccdep),sum(d$ccself),sum(d$ccseverity)))
-flow <- rbind(data.frame(stage=c('all_age_eligible_including_proxy','proxy_age_eligible','self_report_age_eligible','original_common_including_proxy','proxy_excluded_from_common'),n=c(sum(d$older_all),sum(d$older_all & !d$self),sum(d$older),sum(d$cc4_all),sum(d$cc4_all & !d$self))),flow)
+flow <- data.frame(
+  stage = c('all_adults', 'all_numeric_age_65plus', 'all_age65_fallback',
+            'all_age_eligible_including_proxy', 'proxy_age_eligible', 'self_report_age_eligible',
+            'self_report_valid_exposure_and_outcome', 'self_report_complete_M4_common',
+            'self_report_complete_M3_available', 'self_report_complete_depression', 'self_report_complete_severity',
+            'common_including_proxy', 'proxy_in_otherwise_complete_sample'),
+  n = c(nrow(d), sum(d$age>=65,na.rm=TRUE), sum(d$older_all & is.na(d$age)),
+        sum(d$older_all), sum(d$older_all & !d$self), sum(d$older),
+        sum(d$older & complete.cases(d[c('swallow','lonely')])), sum(d$cc4),
+        sum(d$cc3), sum(d$ccdep), sum(d$ccseverity), sum(d$cc4_all), sum(d$cc4_all & !d$self))
+)
 save_table(flow,'participant_flow')
 
 dmodel <- d[c('PPSU','PSTRAT','WTFA_A','older',core,'contact3','contact4','depression','severity','lonely_broad','cc3','cc4','ccdep','ccself','ccseverity','cc4_all')]

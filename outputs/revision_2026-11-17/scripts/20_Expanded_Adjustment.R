@@ -20,10 +20,19 @@ d$diabetes <- yn(d$DIBEV_A)
 asthma <- ifelse(d$ASEV_A==2,0,ifelse(d$ASEV_A==1,yn(d$ASTILL_A),NA))
 copd <- yn(d$COPDEV_A)
 d$lung <- ifelse(copd==1 | asthma==1,1,ifelse(copd==0 & asthma==0,0,NA))
-cancers <- c(setdiff(grep('CAN_A$',names(d),value=TRUE),'SKNNMCAN_A'),'OTHERCANP_A')
-cm <- sapply(d[cancers],yn)
+# NHIS Sample Adult cancer-type indicators, including the public-use other category.
+cancers <- c('BLADDCAN_A', 'BLOODCAN_A', 'BONECAN_A', 'BRAINCAN_A', 'BREASCAN_A',
+             'CERVICAN_A', 'COLONCAN_A', 'COLRCCAN_A', 'ESOPHCAN_A', 'GALLBCAN_A',
+             'HDNCKCAN_A', 'LARYNCAN_A', 'LEUKECAN_A', 'LIVERCAN_A', 'LUNGCAN_A',
+             'LYMPHCAN_A', 'MELANCAN_A', 'MOUTHCAN_A', 'OVARYCAN_A', 'PANCRCAN_A',
+             'PROSTCAN_A', 'RECTUCAN_A', 'SKNMCAN_A', 'STOMACAN_A', 'THROACAN_A',
+             'THYROCAN_A', 'UTERUCAN_A', 'OTHERCANP_A')
+cm <- sapply(d[cancers], yn)
+# Items outside the sex-specific question universe cannot establish another cancer.
+cm[d$SEX_A %in% 1, c('CERVICAN_A', 'OVARYCAN_A', 'UTERUCAN_A')] <- 0
+cm[d$SEX_A %in% 2, 'PROSTCAN_A'] <- 0
 other_yes <- rowSums(cm==1,na.rm=TRUE)>0
-other_no <- rowSums(is.na(cm))==0 & rowSums(cm)==0
+other_no <- rowSums(is.na(cm))==0 & rowSums(cm)==0 & d$SKNDKCAN_A %in% 2 & d$SKNNMCAN_A %in% 1
 d$cancer <- ifelse(d$CANEV_A==2,0,ifelse(d$CANEV_A==1 & other_yes,1,ifelse(d$CANEV_A==1 & other_no,0,NA)))
 d$score <- d$mi+d$lung+d$arthritis+d$diabetes+2*d$cancer
 d$comorb <- factor(pmin(d$score,3),levels=0:3)

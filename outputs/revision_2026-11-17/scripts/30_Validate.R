@@ -25,12 +25,21 @@ H<-crossprod(X,(w*mu)*X);IF<-(X*as.numeric(w*(y-mu)))%*%solve(H)
 V<-svyrecvar(IF,sub$cluster,sub$strata,sub$fpc)
 stopifnot(max(abs(V-vcov(sf)))<1e-7)
 e<-readRDS('work/revision_2026-11-17/proposal_prepared.rds')
-stopifnot(sum(e$extended)==7773,all(e$self[e$extended]),sum(e$extended & e$swallow==1)==623,sum(e$lonely[e$extended])==405)
+# Independently identify single-type histories and a mixed history from raw indicators.
+only_nonmelanoma <- with(e, CANEV_A %in% 1 & NUMCAN_A %in% 1 & SKNNMCAN_A %in% 1)
+only_unknown_skin <- with(e, CANEV_A %in% 1 & NUMCAN_A %in% 1 & SKNDKCAN_A %in% 1)
+mixed_history <- with(e, SKNNMCAN_A %in% 1 & (MELANCAN_A %in% 1 | OTHERCANP_A %in% 1))
+stopifnot(any(only_nonmelanoma), all(e$cancer[only_nonmelanoma]==0),
+          any(only_unknown_skin), all(is.na(e$cancer[only_unknown_skin])),
+          any(mixed_history), all(e$cancer[mixed_history]==1))
+stopifnot(sum(e$extended)==7658, all(e$self[e$extended]),
+          sum(e$extended & e$swallow==1)==606, sum(e$lonely[e$extended])==399,
+          sum(e$extended & e$swallow==1 & e$lonely==1)==75)
 expanded<-read.delim(file.path(base,'expanded_adjustment.tsv'))
 stopifnot(all(expanded$income=='ten'),all(expanded$lower<=expanded$PR),all(expanded$PR<=expanded$upper))
-stopifnot(abs(subset(expanded,model=='full')$PR-1.67542531802605)<1e-8)
+stopifnot(abs(subset(expanded,model=='full')$PR-1.68495090157365)<1e-8)
 precision<-read.delim(file.path(base,'extended_tables/NCHS_precision_primary_prevalences.tsv'))
 stopifnot(all(precision$status=='present'),all(precision$complement_status=='present'))
-results<-c('Self-report main model reproduces the previous proxy-exclusion sensitivity.', 'Including proxies reproduces the original main model.', 'Excluded proxies: 288 age-eligible; 265 in otherwise complete regression sample.', 'Independent weighted GLM coefficients and score-based survey covariance agree.', 'All expanded models pool ten income imputations and have ordered confidence intervals.', 'Expanded sample and exposed/event counts agree with manuscript.', 'All six primary descriptive proportions and complements pass precision checks.')
+results<-c('Self-report main model reproduces the previous proxy-exclusion sensitivity.', 'Including proxies reproduces the original main model.', 'Excluded proxies: 288 age-eligible; 265 in otherwise complete regression sample.', 'Independent weighted GLM coefficients and score-based survey covariance agree.', 'All expanded models pool ten income imputations and have ordered confidence intervals.', 'Cancer coding and expanded sample counts passed independent checks.', 'All six primary descriptive proportions and complements pass precision checks.')
 writeLines(results,file.path(base,'validation.txt'))
 cat(paste(results,collapse='\n'),'\n')
