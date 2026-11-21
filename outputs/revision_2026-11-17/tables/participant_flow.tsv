@@ -1,0 +1,14 @@
+stage	n
+all_adults	24215
+all_numeric_age_65plus	8468
+all_age65_fallback	24
+all_age_eligible_including_proxy	8492
+proxy_age_eligible	288
+self_report_age_eligible	8204
+self_report_valid_exposure_and_outcome	7959
+self_report_complete_M4_common	7829
+self_report_complete_M3_available	7854
+self_report_complete_depression	7796
+self_report_complete_severity	7828
+common_including_proxy	8094
+proxy_in_otherwise_complete_sample	265
