@@ -1,0 +1,200 @@
+{
+  "common_sample_n": 7636,
+  "frequent_loneliness_events": 396,
+  "swallowing_problems_n": 603,
+  "main_models": [
+    {
+      "model": "M0",
+      "term": "swallow",
+      "measure": "PR",
+      "estimate": 2.68691746365829,
+      "lower": 2.02495427857325,
+      "upper": 3.5652782548743,
+      "log_estimate": 0.988394612249891,
+      "se_log": 0.143999583497938,
+      "df": 558.010657193606,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M1",
+      "term": "swallow",
+      "measure": "PR",
+      "estimate": 2.48385646284115,
+      "lower": 1.91679716701128,
+      "upper": 3.21867281221907,
+      "log_estimate": 0.909812377716105,
+      "se_log": 0.131932192236594,
+      "df": 546.086426727198,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M2",
+      "term": "swallow",
+      "measure": "PR",
+      "estimate": 1.78174797641819,
+      "lower": 1.3644686557412,
+      "upper": 2.32663889940793,
+      "log_estimate": 0.577594891672073,
+      "se_log": 0.135829901150408,
+      "df": 531.088619125649,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M3",
+      "term": "swallow",
+      "measure": "PR",
+      "estimate": 1.72439849447346,
+      "lower": 1.33104849821553,
+      "upper": 2.2339908513693,
+      "log_estimate": 0.544878290817777,
+      "se_log": 0.131792057887793,
+      "df": 519.135031708417,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M4",
+      "term": "swallow",
+      "measure": "PR",
+      "estimate": 1.50684947288973,
+      "lower": 1.16074245250362,
+      "upper": 1.95615774115144,
+      "log_estimate": 0.410021029379934,
+      "se_log": 0.132834984777634,
+      "df": 518.290885132438,
+      "n": 7636,
+      "events": 396
+    }
+  ],
+  "standardized_estimates": [
+    {
+      "model": "M3",
+      "measure": "prevalence_no_problem",
+      "estimate": 0.0414136237518266,
+      "lower": 0.0364827987509812,
+      "upper": 0.0469783803856253,
+      "df": 519.976619616697,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M3",
+      "measure": "prevalence_problem",
+      "estimate": 0.0736081540437392,
+      "lower": 0.0575911885452644,
+      "upper": 0.0936370741484564,
+      "df": 519.416440327643,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M3",
+      "measure": "prevalence_difference",
+      "estimate": 0.0321950231158112,
+      "lower": 0.0139954052389042,
+      "upper": 0.0503946409927182,
+      "df": 519.343133913308,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M3",
+      "measure": "marginal_PR",
+      "estimate": 1.77738881086878,
+      "lower": 1.36506810388065,
+      "upper": 2.31425155713532,
+      "df": 519.363167923593,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M4",
+      "measure": "prevalence_no_problem",
+      "estimate": 0.0420850938328519,
+      "lower": 0.0370465493713315,
+      "upper": 0.0477749111260489,
+      "df": 518.980064834265,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M4",
+      "measure": "prevalence_problem",
+      "estimate": 0.0660584596412628,
+      "lower": 0.0515595330832071,
+      "upper": 0.0842723184985368,
+      "df": 518.574291437766,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M4",
+      "measure": "prevalence_difference",
+      "estimate": 0.0239737063105002,
+      "lower": 0.0071544028002092,
+      "upper": 0.0407930098207912,
+      "df": 518.524471845972,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M4",
+      "measure": "marginal_PR",
+      "estimate": 1.56963969163388,
+      "lower": 1.19756375872059,
+      "upper": 2.05731740261133,
+      "df": 518.539251323242,
+      "n": 7636,
+      "events": 396
+    },
+    {
+      "model": "M3_broad",
+      "measure": "prevalence_no_problem",
+      "estimate": 0.22416305263813,
+      "lower": 0.213037131931184,
+      "upper": 0.235696001324109,
+      "df": 520.00623009903,
+      "n": 7636,
+      "events": 1968
+    },
+    {
+      "model": "M3_broad",
+      "measure": "prevalence_problem",
+      "estimate": 0.266131587372383,
+      "lower": 0.23235098092637,
+      "upper": 0.302885636548246,
+      "df": 519.943027004355,
+      "n": 7636,
+      "events": 1968
+    },
+    {
+      "model": "M3_broad",
+      "measure": "prevalence_difference",
+      "estimate": 0.0419685796123702,
+      "lower": 0.005429334780618,
+      "upper": 0.0785078244441225,
+      "df": 519.935645567049,
+      "n": 7636,
+      "events": 1968
+    },
+    {
+      "model": "M3_broad",
+      "measure": "marginal_PR",
+      "estimate": 1.18722313359945,
+      "lower": 1.03253290854538,
+      "upper": 1.36508847058383,
+      "df": 519.935919121848,
+      "n": 7636,
+      "events": 1968
+    }
+  ],
+  "consistency_checks_passed": 21,
+  "software": {
+    "R": "4.5.0",
+    "survey": "4.4.2",
+    "mitools": "2.4"
+  }
+}

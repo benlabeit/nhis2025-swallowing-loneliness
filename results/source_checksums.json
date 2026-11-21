@@ -1,0 +1,16 @@
+[
+  {
+    "name": "adult25.csv",
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NHIS/2025/adult25csv.zip",
+    "archive_sha256": "94d5477ffc3a03e292a3000da8eb5ad71626ae8032bbaa98c9711b7a3b572570",
+    "sha256": "011b46e814e619acd970a1449a7f7d6a97f52c7ffe07e955c753f791da23d12b",
+    "size_bytes": 22038942
+  },
+  {
+    "name": "adultinc25.csv",
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NHIS/2025/adultinc25csv.zip",
+    "archive_sha256": "861bd254d29a375ae276539efe73775374f9205e5b4933ace2f07aa588d42535",
+    "sha256": "6bb0bb5df0a9b066a098efda6e5b423b8a765d9f02359cf8622becc0943b861a",
+    "size_bytes": 6237095
+  }
+]
