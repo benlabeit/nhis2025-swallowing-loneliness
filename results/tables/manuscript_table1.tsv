@@ -1,0 +1,61 @@
+label	variable	swallow	weighted_percent	n_min	n_max	denominator
+Age 65–74 years	agegrp	0	60.3910844105003	3918	3918	7033
+Age 65–74 years	agegrp	1	52.7923582749932	288	288	603
+Age 75–84 years	agegrp	0	31.4264642004988	2410	2410	7033
+Age 75–84 years	agegrp	1	35.9854163862097	231	231	603
+Age 85 years or older	agegrp	0	8.18245138900087	705	705	7033
+Age 85 years or older	agegrp	1	11.2222253387971	84	84	603
+Female sex	sex	0	54.3261508784932	4005	4005	7033
+Female sex	sex	1	59.1606241743961	373	373	603
+Education less than high school	education	0	11.4196458792876	604	604	7033
+Education less than high school	education	1	10.3382384223901	52	52	603
+High school or GED	education	0	25.5575500410599	1809	1809	7033
+High school or GED	education	1	25.1611977856721	153	153	603
+Some college or associate degree	education	0	29.7085764130714	2093	2093	7033
+Some college or associate degree	education	1	35.6295926779508	206	206	603
+Bachelor’s degree or higher	education	0	33.3142276665811	2527	2527	7033
+Bachelor’s degree or higher	education	1	28.870971113987	192	192	603
+Income below 100% of poverty threshold	poverty	0	7.61953115834972	556	577	7033
+Income below 100% of poverty threshold	poverty	1	11.027872172053	65	71	603
+Income 100% to less than 200%	poverty	0	20.2128730208636	1460	1493	7033
+Income 100% to less than 200%	poverty	1	26.70375974218	157	165	603
+Income 200% to less than 400%	poverty	0	33.2305883118776	2312	2335	7033
+Income 200% to less than 400%	poverty	1	31.8772295450062	193	200	603
+Income at least 400%	poverty	0	38.9370075089091	2655	2676	7033
+Income at least 400%	poverty	1	30.3911385407608	174	183	603
+Married or cohabiting	partner	0	57.3153339657443	3220	3220	7033
+Married or cohabiting	partner	1	53.3662371532722	261	261	603
+Living alone	alone	0	31.9086672686404	3432	3432	7033
+Living alone	alone	1	34.3876004344713	308	308	603
+Any mobility difficulty	mobility	0	37.9672524488319	2742	2742	7033
+Any mobility difficulty	mobility	1	63.7219627111875	393	393	603
+Any hearing difficulty	hearing	0	27.8364082978566	2045	2045	7033
+Any hearing difficulty	hearing	1	44.3153740415091	273	273	603
+Any vision difficulty	vision	0	23.2679400481827	1643	1643	7033
+Any vision difficulty	vision	1	42.6033333863988	260	260	603
+History of stroke	stroke	0	5.66453614469968	424	424	7033
+History of stroke	stroke	1	14.4327875845909	85	85	603
+Diagnosed dementia	dementia	0	1.7704834455139	117	117	7033
+Diagnosed dementia	dementia	1	5.654211906996	36	36	603
+Any remembering/concentrating difficulty	cognition	0	28.6529497311732	2108	2108	7033
+Any remembering/concentrating difficulty	cognition	1	58.5733037235126	347	347	603
+History of myocardial infarction	mi	0	6.48875785138457	467	467	7033
+History of myocardial infarction	mi	1	11.5419636892281	72	72	603
+COPD or current asthma	lung	0	14.3299997687064	1043	1043	7033
+COPD or current asthma	lung	1	28.7256259466838	173	173	603
+History of arthritis	arthritis	0	44.8953802413406	3249	3249	7033
+History of arthritis	arthritis	1	64.129255796553	405	405	603
+History of diabetes	diabetes	0	18.4417451285508	1253	1253	7033
+History of diabetes	diabetes	1	25.0327740533749	137	137	603
+History of cancer excluding nonmelanoma skin cancer	cancer	0	20.8996175249962	1545	1545	7033
+History of cancer excluding nonmelanoma skin cancer	cancer	1	33.8509755004852	203	203	603
+In-person contact less than weekly	contact1	0	15.6859299417468	1004	1004	7033
+In-person contact less than weekly	contact1	1	23.5589869198316	138	138	603
+Phone/video contact less than weekly	contact2	0	8.73304943726179	580	580	7033
+Phone/video contact less than weekly	contact2	1	10.5965986353948	64	64	603
+No religious-service attendance in previous year	contact3	0	43.9483533012825	3127	3127	7033
+No religious-service attendance in previous year	contact3	1	49.0600652112515	302	302	603
+No group meetings in previous year	contact4	0	62.2023907085155	4255	4255	7033
+No group meetings in previous year	contact4	1	61.9816718299726	372	372	603
+Daily or weekly depressive feelings	depression	0	6.35576372759205	491	491	7033
+Daily or weekly depressive feelings	depression	1	17.6530398066065	112	112	603

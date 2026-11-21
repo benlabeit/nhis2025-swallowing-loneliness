@@ -1,0 +1,6 @@
+model	role	formula
+M0	Unadjusted	lonely ~ swallow
+M1	Sociodemographic and household	lonely ~ swallow + agegrp + sex + education + poverty + partner +      alone
+M2	Health	lonely ~ swallow + agegrp + sex + education + poverty + partner +      alone + mobility + hearing + vision + stroke + dementia +      cognition + mi + lung + arthritis + diabetes + cancer
+M3	Primary: social connection	lonely ~ swallow + agegrp + sex + education + poverty + partner +      alone + mobility + hearing + vision + stroke + dementia +      cognition + mi + lung + arthritis + diabetes + cancer + contact1 +      contact2 + contact3 + contact4
+M4	Additional: depressive feelings	lonely ~ swallow + agegrp + sex + education + poverty + partner +      alone + mobility + hearing + vision + stroke + dementia +      cognition + mi + lung + arthritis + diabetes + cancer + contact1 +      contact2 + contact3 + contact4 + depression
