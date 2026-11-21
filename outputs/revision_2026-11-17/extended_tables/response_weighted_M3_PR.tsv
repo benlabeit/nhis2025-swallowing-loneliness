@@ -1,3 +1,0 @@
-model	measure	estimate	lower	upper	df
-Response_IPW_joint_linearization	swallow	1.99734786436806	1.55422953283815	2.566801368142	535.478609978954
-Response_IPW_winsorized_conditional_CI	swallow	1.99729460845947	1.5541387357921	2.56681444269394	535.478906037339
